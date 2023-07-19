@@ -3,11 +3,8 @@ package com.jahirtrap.ingotcraft;
 import com.jahirtrap.ingotcraft.init.IngotcraftModBlocks;
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -34,21 +31,14 @@ public class IngotcraftMod {
     public IngotcraftMod() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        bus.addListener(this::registerCreativeTab);
-        bus.addListener(IngotcraftModTab::buildContents);
         IngotcraftModBlocks.REGISTRY.register(bus);
         IngotcraftModItems.REGISTRY.register(bus);
+        IngotcraftModTab.init();
     }
 
     public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
                                              BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
         PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
         messageID++;
-    }
-
-    void registerCreativeTab(CreativeModeTabEvent.Register event) {
-        MODTAB = event.registerCreativeModeTab(new ResourceLocation(MODID, "tabingot_craft"), builder -> builder.icon(() -> new ItemStack(IngotcraftModItems.STEEL_INGOT.get()))
-                .title(Component.translatable("itemGroup.tabingot_craft"))
-                .build());
     }
 }
