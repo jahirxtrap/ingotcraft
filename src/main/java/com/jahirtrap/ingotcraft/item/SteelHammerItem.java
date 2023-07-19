@@ -1,7 +1,6 @@
 package com.jahirtrap.ingotcraft.item;
 
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
@@ -34,7 +33,7 @@ public class SteelHammerItem extends PickaxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT.get()));
             }
-        }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        }, 1, -3f, new Item.Properties());
     }
 
     @Override

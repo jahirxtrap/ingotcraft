@@ -1,7 +1,6 @@
 package com.jahirtrap.ingotcraft.item;
 
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -34,6 +33,6 @@ public class SteelAxeItem extends AxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT.get()));
             }
-        }, 1, -3.1f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        }, 1, -3.1f, new Item.Properties());
     }
 }

@@ -1,6 +1,5 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
@@ -14,16 +13,16 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public abstract class InvisibleItem extends ArmorItem {
-    public InvisibleItem(EquipmentSlot slot, Item.Properties properties) {
+    public InvisibleItem(ArmorItem.Type type, Item.Properties properties) {
         super(new ArmorMaterial() {
             @Override
-            public int getDurabilityForSlot(EquipmentSlot slot) {
-                return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
+            public int getDurabilityForType(ArmorItem.Type type) {
+                return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 15;
             }
 
             @Override
-            public int getDefenseForSlot(EquipmentSlot slot) {
-                return new int[]{2, 5, 6, 2}[slot.getIndex()];
+            public int getDefenseForType(ArmorItem.Type type) {
+                return new int[]{2, 5, 6, 2}[type.getSlot().getIndex()];
             }
 
             @Override
@@ -55,12 +54,12 @@ public abstract class InvisibleItem extends ArmorItem {
             public float getKnockbackResistance() {
                 return 0f;
             }
-        }, slot, properties);
+        }, type, properties);
     }
 
     public static class Helmet extends InvisibleItem {
         public Helmet() {
-            super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(Type.HELMET, new Item.Properties());
         }
 
         @Override
@@ -71,7 +70,7 @@ public abstract class InvisibleItem extends ArmorItem {
 
     public static class Chestplate extends InvisibleItem {
         public Chestplate() {
-            super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(Type.CHESTPLATE, new Item.Properties());
         }
 
         @Override
@@ -82,7 +81,7 @@ public abstract class InvisibleItem extends ArmorItem {
 
     public static class Leggings extends InvisibleItem {
         public Leggings() {
-            super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(Type.LEGGINGS, new Item.Properties());
         }
 
         @Override
@@ -93,7 +92,7 @@ public abstract class InvisibleItem extends ArmorItem {
 
     public static class Boots extends InvisibleItem {
         public Boots() {
-            super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(Type.BOOTS, new Item.Properties());
         }
 
         @Override

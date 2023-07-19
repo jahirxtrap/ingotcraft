@@ -1,6 +1,8 @@
 {
-    "pack": {
-        "description": "ingotcraft mod resources",
-        "pack_format": 9
-    }
+  "pack": {
+    "description": {
+      "text": "ingotcraft mod resources"
+    },
+    "pack_format": 13
+  }
 }

@@ -1,7 +1,6 @@
 package com.jahirtrap.ingotcraft.item;
 
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
@@ -34,6 +33,6 @@ public class BronzeSwordItem extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
             }
-        }, 3, -2.4f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        }, 3, -2.4f, new Item.Properties());
     }
 }

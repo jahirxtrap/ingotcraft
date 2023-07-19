@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "ingotcraft:steel_helmet",
+    "ingotcraft:steel_chestplate",
+    "ingotcraft:steel_leggings",
+    "ingotcraft:steel_boots",
+    "ingotcraft:bronze_helmet",
+    "ingotcraft:bronze_chestplate",
+    "ingotcraft:bronze_leggings",
+    "ingotcraft:bronze_boots",
+    "ingotcraft:invisible_helmet",
+    "ingotcraft:invisible_chestplate",
+    "ingotcraft:invisible_leggings",
+    "ingotcraft:invisible_boots",
+    "ingotcraft:reinforced_invisible_helmet",
+    "ingotcraft:reinforced_invisible_chestplate",
+    "ingotcraft:reinforced_invisible_leggings",
+    "ingotcraft:reinforced_invisible_boots"
+  ]
+}

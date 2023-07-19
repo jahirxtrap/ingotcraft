@@ -1,6 +1,5 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 
@@ -30,7 +29,7 @@ public class GoldenHammerItem extends PickaxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
             }
-        }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        }, 1, -3f, new Item.Properties());
     }
 
     @Override
