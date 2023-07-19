@@ -2,8 +2,6 @@ package com.jahirtrap.ingotcraft.init;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class IngotcraftModTabs {
     public static CreativeModeTab TAB_INGOT_CRAFT;
@@ -15,7 +13,7 @@ public class IngotcraftModTabs {
                 return new ItemStack(IngotcraftModItems.STEEL_INGOT.get());
             }
 
-            @OnlyIn(Dist.CLIENT)
+            @Override
             public boolean hasSearchBar() {
                 return false;
             }

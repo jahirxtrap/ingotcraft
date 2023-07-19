@@ -4,6 +4,7 @@ import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.UseAnim;
 
 public class TinNuggetItem extends Item {
     public TinNuggetItem() {
@@ -11,7 +12,7 @@ public class TinNuggetItem extends Item {
     }
 
     @Override
-    public int getUseDuration(ItemStack itemstack) {
-        return 0;
+    public UseAnim getUseAnimation(ItemStack itemstack) {
+        return UseAnim.EAT;
     }
 }

@@ -29,10 +29,10 @@ public class IngotcraftMod {
 
     public IngotcraftMod() {
         IngotcraftModTabs.load();
+
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         IngotcraftModBlocks.REGISTRY.register(bus);
         IngotcraftModItems.REGISTRY.register(bus);
-
     }
 
     public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
