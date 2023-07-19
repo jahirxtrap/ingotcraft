@@ -61,7 +61,6 @@ public abstract class InvisibleItem extends ArmorItem {
     public static class Helmet extends InvisibleItem {
         public Helmet() {
             super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("invisible_helmet");
         }
 
         @Override
@@ -73,7 +72,6 @@ public abstract class InvisibleItem extends ArmorItem {
     public static class Chestplate extends InvisibleItem {
         public Chestplate() {
             super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("invisible_chestplate");
         }
 
         @Override
@@ -85,7 +83,6 @@ public abstract class InvisibleItem extends ArmorItem {
     public static class Leggings extends InvisibleItem {
         public Leggings() {
             super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("invisible_leggings");
         }
 
         @Override
@@ -97,7 +94,6 @@ public abstract class InvisibleItem extends ArmorItem {
     public static class Boots extends InvisibleItem {
         public Boots() {
             super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("invisible_boots");
         }
 
         @Override

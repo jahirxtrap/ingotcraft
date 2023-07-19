@@ -31,7 +31,6 @@ public class NetheriteHammerItem extends PickaxeItem {
                 return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
             }
         }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).fireResistant());
-        setRegistryName("netherite_hammer");
     }
 
     @Override

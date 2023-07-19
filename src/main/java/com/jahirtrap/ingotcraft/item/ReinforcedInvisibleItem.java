@@ -14,7 +14,7 @@ public abstract class ReinforcedInvisibleItem extends ArmorItem {
         super(new ArmorMaterial() {
             @Override
             public int getDurabilityForSlot(EquipmentSlot slot) {
-                return new int[]{13, 15, 16, 11}[slot.getIndex()] * 31;
+                return new int[]{13, 15, 16, 11}[slot.getIndex()] * 30;
             }
 
             @Override
@@ -57,7 +57,6 @@ public abstract class ReinforcedInvisibleItem extends ArmorItem {
     public static class Helmet extends ReinforcedInvisibleItem {
         public Helmet() {
             super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).rarity(Rarity.RARE));
-            setRegistryName("reinforced_invisible_helmet");
         }
 
         @Override
@@ -69,7 +68,6 @@ public abstract class ReinforcedInvisibleItem extends ArmorItem {
     public static class Chestplate extends ReinforcedInvisibleItem {
         public Chestplate() {
             super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).rarity(Rarity.RARE));
-            setRegistryName("reinforced_invisible_chestplate");
         }
 
         @Override
@@ -81,7 +79,6 @@ public abstract class ReinforcedInvisibleItem extends ArmorItem {
     public static class Leggings extends ReinforcedInvisibleItem {
         public Leggings() {
             super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).rarity(Rarity.RARE));
-            setRegistryName("reinforced_invisible_leggings");
         }
 
         @Override
@@ -93,7 +90,6 @@ public abstract class ReinforcedInvisibleItem extends ArmorItem {
     public static class Boots extends ReinforcedInvisibleItem {
         public Boots() {
             super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).rarity(Rarity.RARE));
-            setRegistryName("reinforced_invisible_boots");
         }
 
         @Override

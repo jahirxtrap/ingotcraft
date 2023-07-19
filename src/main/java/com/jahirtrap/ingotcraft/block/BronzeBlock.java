@@ -18,7 +18,6 @@ import java.util.List;
 public class BronzeBlock extends Block {
     public BronzeBlock() {
         super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("bronze_block");
     }
 
     @Override

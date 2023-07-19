@@ -31,7 +31,6 @@ public class GoldenHammerItem extends PickaxeItem {
                 return Ingredient.of(new ItemStack(Items.GOLD_INGOT));
             }
         }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("golden_hammer");
     }
 
     @Override

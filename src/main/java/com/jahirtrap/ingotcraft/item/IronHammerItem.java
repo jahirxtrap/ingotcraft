@@ -31,7 +31,6 @@ public class IronHammerItem extends PickaxeItem {
                 return Ingredient.of(new ItemStack(Items.IRON_INGOT));
             }
         }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("iron_hammer");
     }
 
     @Override

@@ -1,35 +1,22 @@
 package com.jahirtrap.ingotcraft.init;
 
+import com.jahirtrap.ingotcraft.IngotcraftMod;
 import com.jahirtrap.ingotcraft.block.*;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IngotcraftModBlocks {
-    private static final List<Block> REGISTRY = new ArrayList<>();
-    public static final Block RAW_STEEL_BLOCK = register(new RawSteelBlock());
-    public static final Block RAW_BRONZE_BLOCK = register(new RawBronzeBlock());
-    public static final Block RAW_LEAD_BLOCK = register(new RawLeadBlock());
-    public static final Block RAW_SILVER_BLOCK = register(new RawSilverBlock());
-    public static final Block RAW_TIN_BLOCK = register(new RawTinBlock());
-    public static final Block STEEL_BLOCK = register(new SteelBlock());
-    public static final Block BRONZE_BLOCK = register(new BronzeBlock());
-    public static final Block LEAD_BLOCK = register(new LeadBlock());
-    public static final Block SILVER_BLOCK = register(new SilverBlock());
-    public static final Block TIN_BLOCK = register(new TinBlock());
-
-    private static Block register(Block block) {
-        REGISTRY.add(block);
-        return block;
-    }
-
-    @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-    }
+    public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, IngotcraftMod.MODID);
+    public static final RegistryObject<Block> RAW_STEEL_BLOCK = REGISTRY.register("raw_steel_block", () -> new RawSteelBlock());
+    public static final RegistryObject<Block> RAW_BRONZE_BLOCK = REGISTRY.register("raw_bronze_block", () -> new RawBronzeBlock());
+    public static final RegistryObject<Block> RAW_LEAD_BLOCK = REGISTRY.register("raw_lead_block", () -> new RawLeadBlock());
+    public static final RegistryObject<Block> RAW_SILVER_BLOCK = REGISTRY.register("raw_silver_block", () -> new RawSilverBlock());
+    public static final RegistryObject<Block> RAW_TIN_BLOCK = REGISTRY.register("raw_tin_block", () -> new RawTinBlock());
+    public static final RegistryObject<Block> STEEL_BLOCK = REGISTRY.register("steel_block", () -> new SteelBlock());
+    public static final RegistryObject<Block> BRONZE_BLOCK = REGISTRY.register("bronze_block", () -> new BronzeBlock());
+    public static final RegistryObject<Block> LEAD_BLOCK = REGISTRY.register("lead_block", () -> new LeadBlock());
+    public static final RegistryObject<Block> SILVER_BLOCK = REGISTRY.register("silver_block", () -> new SilverBlock());
+    public static final RegistryObject<Block> TIN_BLOCK = REGISTRY.register("tin_block", () -> new TinBlock());
 }

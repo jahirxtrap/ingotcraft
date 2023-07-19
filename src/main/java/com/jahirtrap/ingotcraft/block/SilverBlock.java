@@ -18,7 +18,6 @@ import java.util.List;
 public class SilverBlock extends Block {
     public SilverBlock() {
         super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("silver_block");
     }
 
     @Override

@@ -8,7 +8,6 @@ import net.minecraft.world.item.Rarity;
 public class RawBronzeItem extends Item {
     public RawBronzeItem() {
         super(new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
-        setRegistryName("raw_bronze");
     }
 
     @Override

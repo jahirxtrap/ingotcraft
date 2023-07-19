@@ -8,7 +8,6 @@ import net.minecraft.world.item.Rarity;
 public class RawSteelItem extends Item {
     public RawSteelItem() {
         super(new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
-        setRegistryName("raw_steel");
     }
 
     @Override

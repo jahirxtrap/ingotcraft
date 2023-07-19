@@ -18,7 +18,6 @@ import java.util.List;
 public class SteelBlock extends Block {
     public SteelBlock() {
         super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("steel_block");
     }
 
     @Override

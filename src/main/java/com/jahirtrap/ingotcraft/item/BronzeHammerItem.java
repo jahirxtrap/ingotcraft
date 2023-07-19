@@ -32,10 +32,9 @@ public class BronzeHammerItem extends PickaxeItem {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
             }
         }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("bronze_hammer");
     }
 
     @Override

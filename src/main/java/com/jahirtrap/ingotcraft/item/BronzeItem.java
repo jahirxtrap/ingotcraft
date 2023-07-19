@@ -38,7 +38,7 @@ public abstract class BronzeItem extends ArmorItem {
 
             @Override
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
             }
 
             @Override
@@ -61,7 +61,6 @@ public abstract class BronzeItem extends ArmorItem {
     public static class Helmet extends BronzeItem {
         public Helmet() {
             super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("bronze_helmet");
         }
 
         @Override
@@ -73,7 +72,6 @@ public abstract class BronzeItem extends ArmorItem {
     public static class Chestplate extends BronzeItem {
         public Chestplate() {
             super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("bronze_chestplate");
         }
 
         @Override
@@ -85,7 +83,6 @@ public abstract class BronzeItem extends ArmorItem {
     public static class Leggings extends BronzeItem {
         public Leggings() {
             super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("bronze_leggings");
         }
 
         @Override
@@ -97,7 +94,6 @@ public abstract class BronzeItem extends ArmorItem {
     public static class Boots extends BronzeItem {
         public Boots() {
             super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("bronze_boots");
         }
 
         @Override

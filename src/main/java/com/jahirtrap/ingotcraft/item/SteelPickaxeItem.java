@@ -32,9 +32,8 @@ public class SteelPickaxeItem extends PickaxeItem {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT.get()));
             }
         }, 1, -2.7999999999999998f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("steel_pickaxe");
     }
 }

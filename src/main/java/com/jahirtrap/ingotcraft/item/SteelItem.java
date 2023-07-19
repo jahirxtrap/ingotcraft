@@ -38,7 +38,7 @@ public abstract class SteelItem extends ArmorItem {
 
             @Override
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT.get()));
             }
 
             @Override
@@ -61,7 +61,6 @@ public abstract class SteelItem extends ArmorItem {
     public static class Helmet extends SteelItem {
         public Helmet() {
             super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("steel_helmet");
         }
 
         @Override
@@ -73,7 +72,6 @@ public abstract class SteelItem extends ArmorItem {
     public static class Chestplate extends SteelItem {
         public Chestplate() {
             super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("steel_chestplate");
         }
 
         @Override
@@ -85,7 +83,6 @@ public abstract class SteelItem extends ArmorItem {
     public static class Leggings extends SteelItem {
         public Leggings() {
             super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("steel_leggings");
         }
 
         @Override
@@ -97,7 +94,6 @@ public abstract class SteelItem extends ArmorItem {
     public static class Boots extends SteelItem {
         public Boots() {
             super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-            setRegistryName("steel_boots");
         }
 
         @Override

@@ -18,7 +18,6 @@ import java.util.List;
 public class LeadBlock extends Block {
     public LeadBlock() {
         super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.COPPER).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("lead_block");
     }
 
     @Override

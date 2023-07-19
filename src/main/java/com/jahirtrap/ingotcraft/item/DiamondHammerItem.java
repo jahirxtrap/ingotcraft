@@ -31,7 +31,6 @@ public class DiamondHammerItem extends PickaxeItem {
                 return Ingredient.of(new ItemStack(Items.DIAMOND));
             }
         }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("diamond_hammer");
     }
 
     @Override

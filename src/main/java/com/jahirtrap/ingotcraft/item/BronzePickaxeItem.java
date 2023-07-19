@@ -32,9 +32,8 @@ public class BronzePickaxeItem extends PickaxeItem {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
             }
         }, 1, -2.7999999999999998f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("bronze_pickaxe");
     }
 }

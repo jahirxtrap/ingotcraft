@@ -32,9 +32,8 @@ public class BronzeSwordItem extends SwordItem {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
             }
         }, 3, -2.4f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("bronze_sword");
     }
 }

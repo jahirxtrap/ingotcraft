@@ -32,9 +32,8 @@ public class BronzeAxeItem extends AxeItem {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
             }
         }, 1, -3.1f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
-        setRegistryName("bronze_axe");
     }
 }

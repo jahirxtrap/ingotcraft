@@ -12,7 +12,7 @@ public class IngotcraftModTabs {
         TAB_INGOT_CRAFT = new CreativeModeTab("tabingot_craft") {
             @Override
             public ItemStack makeIcon() {
-                return new ItemStack(IngotcraftModItems.STEEL_INGOT);
+                return new ItemStack(IngotcraftModItems.STEEL_INGOT.get());
             }
 
             @OnlyIn(Dist.CLIENT)

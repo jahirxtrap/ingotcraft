@@ -18,7 +18,6 @@ import java.util.List;
 public class TinBlock extends Block {
     public TinBlock() {
         super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("tin_block");
     }
 
     @Override

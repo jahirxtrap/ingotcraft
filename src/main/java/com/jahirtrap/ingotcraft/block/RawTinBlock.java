@@ -18,7 +18,6 @@ import java.util.List;
 public class RawTinBlock extends Block {
     public RawTinBlock() {
         super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("raw_tin_block");
     }
 
     @Override

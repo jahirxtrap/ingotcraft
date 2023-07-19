@@ -18,7 +18,6 @@ import java.util.List;
 public class RawSilverBlock extends Block {
     public RawSilverBlock() {
         super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("raw_silver_block");
     }
 
     @Override

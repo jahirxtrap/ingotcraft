@@ -8,7 +8,6 @@ import net.minecraft.world.item.Rarity;
 public class SteelNuggetItem extends Item {
     public SteelNuggetItem() {
         super(new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
-        setRegistryName("steel_nugget");
     }
 
     @Override

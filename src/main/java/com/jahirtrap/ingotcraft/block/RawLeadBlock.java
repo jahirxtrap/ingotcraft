@@ -18,7 +18,6 @@ import java.util.List;
 public class RawLeadBlock extends Block {
     public RawLeadBlock() {
         super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(5f, 6f).requiresCorrectToolForDrops());
-        setRegistryName("raw_lead_block");
     }
 
     @Override

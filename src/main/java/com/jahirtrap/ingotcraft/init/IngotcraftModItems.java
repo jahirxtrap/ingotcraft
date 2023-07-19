@@ -1,90 +1,81 @@
 package com.jahirtrap.ingotcraft.init;
 
+import com.jahirtrap.ingotcraft.IngotcraftMod;
 import com.jahirtrap.ingotcraft.item.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IngotcraftModItems {
-    private static final List<Item> REGISTRY = new ArrayList<>();
-    public static final Item STEEL_SWORD = register(new SteelSwordItem());
-    public static final Item STEEL_PICKAXE = register(new SteelPickaxeItem());
-    public static final Item STEEL_AXE = register(new SteelAxeItem());
-    public static final Item STEEL_SHOVEL = register(new SteelShovelItem());
-    public static final Item STEEL_HOE = register(new SteelHoeItem());
-    public static final Item BRONZE_SWORD = register(new BronzeSwordItem());
-    public static final Item BRONZE_PICKAXE = register(new BronzePickaxeItem());
-    public static final Item BRONZE_AXE = register(new BronzeAxeItem());
-    public static final Item BRONZE_SHOVEL = register(new BronzeShovelItem());
-    public static final Item BRONZE_HOE = register(new BronzeHoeItem());
-    public static final Item RAW_STEEL = register(new RawSteelItem());
-    public static final Item RAW_BRONZE = register(new RawBronzeItem());
-    public static final Item RAW_LEAD = register(new RawLeadItem());
-    public static final Item RAW_SILVER = register(new RawSilverItem());
-    public static final Item RAW_TIN = register(new RawTinItem());
-    public static final Item RAW_STEEL_BLOCK = register(IngotcraftModBlocks.RAW_STEEL_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item RAW_BRONZE_BLOCK = register(IngotcraftModBlocks.RAW_BRONZE_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item RAW_LEAD_BLOCK = register(IngotcraftModBlocks.RAW_LEAD_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item RAW_SILVER_BLOCK = register(IngotcraftModBlocks.RAW_SILVER_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item RAW_TIN_BLOCK = register(IngotcraftModBlocks.RAW_TIN_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item STEEL_INGOT = register(new SteelIngotItem());
-    public static final Item BRONZE_INGOT = register(new BronzeIngotItem());
-    public static final Item LEAD_INGOT = register(new LeadIngotItem());
-    public static final Item SILVER_INGOT = register(new SilverIngotItem());
-    public static final Item TIN_INGOT = register(new TinIngotItem());
-    public static final Item STEEL_BLOCK = register(IngotcraftModBlocks.STEEL_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item BRONZE_BLOCK = register(IngotcraftModBlocks.BRONZE_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item LEAD_BLOCK = register(IngotcraftModBlocks.LEAD_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item SILVER_BLOCK = register(IngotcraftModBlocks.SILVER_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item TIN_BLOCK = register(IngotcraftModBlocks.TIN_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
-    public static final Item STEEL_NUGGET = register(new SteelNuggetItem());
-    public static final Item BRONZE_NUGGET = register(new BronzeNuggetItem());
-    public static final Item LEAD_NUGGET = register(new LeadNuggetItem());
-    public static final Item SILVER_NUGGET = register(new SilverNuggetItem());
-    public static final Item TIN_NUGGET = register(new TinNuggetItem());
-    public static final Item COPPER_NUGGET = register(new CopperNuggetItem());
-    public static final Item STEEL_HELMET = register(new SteelItem.Helmet());
-    public static final Item STEEL_CHESTPLATE = register(new SteelItem.Chestplate());
-    public static final Item STEEL_LEGGINGS = register(new SteelItem.Leggings());
-    public static final Item STEEL_BOOTS = register(new SteelItem.Boots());
-    public static final Item BRONZE_HELMET = register(new BronzeItem.Helmet());
-    public static final Item BRONZE_CHESTPLATE = register(new BronzeItem.Chestplate());
-    public static final Item BRONZE_LEGGINGS = register(new BronzeItem.Leggings());
-    public static final Item BRONZE_BOOTS = register(new BronzeItem.Boots());
-    public static final Item INVISIBLE_HELMET = register(new InvisibleItem.Helmet());
-    public static final Item INVISIBLE_CHESTPLATE = register(new InvisibleItem.Chestplate());
-    public static final Item INVISIBLE_LEGGINGS = register(new InvisibleItem.Leggings());
-    public static final Item INVISIBLE_BOOTS = register(new InvisibleItem.Boots());
-    public static final Item REINFORCED_INVISIBLE_HELMET = register(new ReinforcedInvisibleItem.Helmet());
-    public static final Item REINFORCED_INVISIBLE_CHESTPLATE = register(new ReinforcedInvisibleItem.Chestplate());
-    public static final Item REINFORCED_INVISIBLE_LEGGINGS = register(new ReinforcedInvisibleItem.Leggings());
-    public static final Item REINFORCED_INVISIBLE_BOOTS = register(new ReinforcedInvisibleItem.Boots());
-    public static final Item IRON_HAMMER = register(new IronHammerItem());
-    public static final Item GOLDEN_HAMMER = register(new GoldenHammerItem());
-    public static final Item DIAMOND_HAMMER = register(new DiamondHammerItem());
-    public static final Item NETHERITE_HAMMER = register(new NetheriteHammerItem());
-    public static final Item STEEL_HAMMER = register(new SteelHammerItem());
-    public static final Item BRONZE_HAMMER = register(new BronzeHammerItem());
+    public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, IngotcraftMod.MODID);
+    public static final RegistryObject<Item> STEEL_SWORD = REGISTRY.register("steel_sword", () -> new SteelSwordItem());
+    public static final RegistryObject<Item> STEEL_PICKAXE = REGISTRY.register("steel_pickaxe", () -> new SteelPickaxeItem());
+    public static final RegistryObject<Item> STEEL_AXE = REGISTRY.register("steel_axe", () -> new SteelAxeItem());
+    public static final RegistryObject<Item> STEEL_SHOVEL = REGISTRY.register("steel_shovel", () -> new SteelShovelItem());
+    public static final RegistryObject<Item> STEEL_HOE = REGISTRY.register("steel_hoe", () -> new SteelHoeItem());
+    public static final RegistryObject<Item> BRONZE_SWORD = REGISTRY.register("bronze_sword", () -> new BronzeSwordItem());
+    public static final RegistryObject<Item> BRONZE_PICKAXE = REGISTRY.register("bronze_pickaxe", () -> new BronzePickaxeItem());
+    public static final RegistryObject<Item> BRONZE_AXE = REGISTRY.register("bronze_axe", () -> new BronzeAxeItem());
+    public static final RegistryObject<Item> BRONZE_SHOVEL = REGISTRY.register("bronze_shovel", () -> new BronzeShovelItem());
+    public static final RegistryObject<Item> BRONZE_HOE = REGISTRY.register("bronze_hoe", () -> new BronzeHoeItem());
+    public static final RegistryObject<Item> RAW_STEEL = REGISTRY.register("raw_steel", () -> new RawSteelItem());
+    public static final RegistryObject<Item> RAW_BRONZE = REGISTRY.register("raw_bronze", () -> new RawBronzeItem());
+    public static final RegistryObject<Item> RAW_LEAD = REGISTRY.register("raw_lead", () -> new RawLeadItem());
+    public static final RegistryObject<Item> RAW_SILVER = REGISTRY.register("raw_silver", () -> new RawSilverItem());
+    public static final RegistryObject<Item> RAW_TIN = REGISTRY.register("raw_tin", () -> new RawTinItem());
+    public static final RegistryObject<Item> RAW_STEEL_BLOCK = block(IngotcraftModBlocks.RAW_STEEL_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> RAW_BRONZE_BLOCK = block(IngotcraftModBlocks.RAW_BRONZE_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> RAW_LEAD_BLOCK = block(IngotcraftModBlocks.RAW_LEAD_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> RAW_SILVER_BLOCK = block(IngotcraftModBlocks.RAW_SILVER_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> RAW_TIN_BLOCK = block(IngotcraftModBlocks.RAW_TIN_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> STEEL_INGOT = REGISTRY.register("steel_ingot", () -> new SteelIngotItem());
+    public static final RegistryObject<Item> BRONZE_INGOT = REGISTRY.register("bronze_ingot", () -> new BronzeIngotItem());
+    public static final RegistryObject<Item> LEAD_INGOT = REGISTRY.register("lead_ingot", () -> new LeadIngotItem());
+    public static final RegistryObject<Item> SILVER_INGOT = REGISTRY.register("silver_ingot", () -> new SilverIngotItem());
+    public static final RegistryObject<Item> TIN_INGOT = REGISTRY.register("tin_ingot", () -> new TinIngotItem());
+    public static final RegistryObject<Item> STEEL_BLOCK = block(IngotcraftModBlocks.STEEL_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> BRONZE_BLOCK = block(IngotcraftModBlocks.BRONZE_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> LEAD_BLOCK = block(IngotcraftModBlocks.LEAD_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> SILVER_BLOCK = block(IngotcraftModBlocks.SILVER_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> TIN_BLOCK = block(IngotcraftModBlocks.TIN_BLOCK, IngotcraftModTabs.TAB_INGOT_CRAFT);
+    public static final RegistryObject<Item> STEEL_NUGGET = REGISTRY.register("steel_nugget", () -> new SteelNuggetItem());
+    public static final RegistryObject<Item> BRONZE_NUGGET = REGISTRY.register("bronze_nugget", () -> new BronzeNuggetItem());
+    public static final RegistryObject<Item> LEAD_NUGGET = REGISTRY.register("lead_nugget", () -> new LeadNuggetItem());
+    public static final RegistryObject<Item> SILVER_NUGGET = REGISTRY.register("silver_nugget", () -> new SilverNuggetItem());
+    public static final RegistryObject<Item> TIN_NUGGET = REGISTRY.register("tin_nugget", () -> new TinNuggetItem());
+    public static final RegistryObject<Item> COPPER_NUGGET = REGISTRY.register("copper_nugget", () -> new CopperNuggetItem());
+    public static final RegistryObject<Item> STEEL_HELMET = REGISTRY.register("steel_helmet", () -> new SteelItem.Helmet());
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = REGISTRY.register("steel_chestplate", () -> new SteelItem.Chestplate());
+    public static final RegistryObject<Item> STEEL_LEGGINGS = REGISTRY.register("steel_leggings", () -> new SteelItem.Leggings());
+    public static final RegistryObject<Item> STEEL_BOOTS = REGISTRY.register("steel_boots", () -> new SteelItem.Boots());
+    public static final RegistryObject<Item> BRONZE_HELMET = REGISTRY.register("bronze_helmet", () -> new BronzeItem.Helmet());
+    public static final RegistryObject<Item> BRONZE_CHESTPLATE = REGISTRY.register("bronze_chestplate", () -> new BronzeItem.Chestplate());
+    public static final RegistryObject<Item> BRONZE_LEGGINGS = REGISTRY.register("bronze_leggings", () -> new BronzeItem.Leggings());
+    public static final RegistryObject<Item> BRONZE_BOOTS = REGISTRY.register("bronze_boots", () -> new BronzeItem.Boots());
+    public static final RegistryObject<Item> INVISIBLE_HELMET = REGISTRY.register("invisible_helmet", () -> new InvisibleItem.Helmet());
+    public static final RegistryObject<Item> INVISIBLE_CHESTPLATE = REGISTRY.register("invisible_chestplate", () -> new InvisibleItem.Chestplate());
+    public static final RegistryObject<Item> INVISIBLE_LEGGINGS = REGISTRY.register("invisible_leggings", () -> new InvisibleItem.Leggings());
+    public static final RegistryObject<Item> INVISIBLE_BOOTS = REGISTRY.register("invisible_boots", () -> new InvisibleItem.Boots());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_HELMET = REGISTRY.register("reinforced_invisible_helmet",
+            () -> new ReinforcedInvisibleItem.Helmet());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_CHESTPLATE = REGISTRY.register("reinforced_invisible_chestplate",
+            () -> new ReinforcedInvisibleItem.Chestplate());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_LEGGINGS = REGISTRY.register("reinforced_invisible_leggings",
+            () -> new ReinforcedInvisibleItem.Leggings());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_BOOTS = REGISTRY.register("reinforced_invisible_boots",
+            () -> new ReinforcedInvisibleItem.Boots());
+    public static final RegistryObject<Item> IRON_HAMMER = REGISTRY.register("iron_hammer", () -> new IronHammerItem());
+    public static final RegistryObject<Item> GOLDEN_HAMMER = REGISTRY.register("golden_hammer", () -> new GoldenHammerItem());
+    public static final RegistryObject<Item> DIAMOND_HAMMER = REGISTRY.register("diamond_hammer", () -> new DiamondHammerItem());
+    public static final RegistryObject<Item> NETHERITE_HAMMER = REGISTRY.register("netherite_hammer", () -> new NetheriteHammerItem());
+    public static final RegistryObject<Item> STEEL_HAMMER = REGISTRY.register("steel_hammer", () -> new SteelHammerItem());
+    public static final RegistryObject<Item> BRONZE_HAMMER = REGISTRY.register("bronze_hammer", () -> new BronzeHammerItem());
 
-    private static Item register(Item item) {
-        REGISTRY.add(item);
-        return item;
-    }
-
-    private static Item register(Block block, CreativeModeTab tab) {
-        return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
-    }
-
-    @SubscribeEvent
-    public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(REGISTRY.toArray(new Item[0]));
+    private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+        return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 }

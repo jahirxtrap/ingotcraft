@@ -8,7 +8,6 @@ import net.minecraft.world.item.Rarity;
 public class TinNuggetItem extends Item {
     public TinNuggetItem() {
         super(new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
-        setRegistryName("tin_nugget");
     }
 
     @Override

@@ -8,7 +8,6 @@ import net.minecraft.world.item.Rarity;
 public class RawTinItem extends Item {
     public RawTinItem() {
         super(new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
-        setRegistryName("raw_tin");
     }
 
     @Override
