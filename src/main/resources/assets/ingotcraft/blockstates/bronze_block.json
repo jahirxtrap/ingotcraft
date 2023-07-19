@@ -1,7 +1,7 @@
 {
   "variants": {
-    "normal": {
-      "model": "ingotcraft:bronze_block"
+    "": {
+      "model": "ingotcraft:block/bronze_block"
     }
   }
 }

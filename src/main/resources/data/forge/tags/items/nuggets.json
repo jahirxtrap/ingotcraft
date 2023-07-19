@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:nuggets/bronze",
+    "#forge:nuggets/copper",
+    "#forge:nuggets/lead",
+    "#forge:nuggets/silver",
+    "#forge:nuggets/steel",
+    "#forge:nuggets/tin"
+  ]
+}

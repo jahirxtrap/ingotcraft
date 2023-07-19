@@ -1,7 +1,7 @@
 {
   "variants": {
-    "normal": {
-      "model": "ingotcraft:tin_block"
+    "": {
+      "model": "ingotcraft:block/tin_block"
     }
   }
 }

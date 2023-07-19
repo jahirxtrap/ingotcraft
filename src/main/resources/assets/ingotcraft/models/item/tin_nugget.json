@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ingotcraft:items/tin_nugget"
+    "layer0": "ingotcraft:item/tin_nugget"
   }
 }

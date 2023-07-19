@@ -1,7 +1,7 @@
 {
   "variants": {
-    "normal": {
-      "model": "ingotcraft:lead_block"
+    "": {
+      "model": "ingotcraft:block/lead_block"
     }
   }
 }

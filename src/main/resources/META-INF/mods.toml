@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "ingotcraft"
+version = "1.16.5-2.3.1-forge"
+displayName = "IngotCraft"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/ingotcraft"
+logoFile = "logo.png"
+authors = "jahirtrap"
+description = "Easy crafting for base metals"
+itemIcon = "ingotcraft:steel_ingot"
+
+[[dependencies.ingotcraft]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[36,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.ingotcraft]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.16.5,1.17)"
+    ordering = "NONE"
+    side = "BOTH"

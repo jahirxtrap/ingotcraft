@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "ingotcraft:items/iron_hammer"
+    "layer0": "ingotcraft:item/iron_hammer"
   }
 }

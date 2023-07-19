@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:helmets/bronze",
+    "#forge:helmets/invisible",
+    "#forge:helmets/reinforced_invisible",
+    "#forge:helmets/steel"
+  ]
+}

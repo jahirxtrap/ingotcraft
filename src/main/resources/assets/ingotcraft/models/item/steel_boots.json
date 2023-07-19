@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ingotcraft:items/steel_boots"
+    "layer0": "ingotcraft:item/steel_boots"
   }
 }
