@@ -1,0 +1,35 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "3": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "5": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:bronze_axe",
+    "count": 1
+  }
+}

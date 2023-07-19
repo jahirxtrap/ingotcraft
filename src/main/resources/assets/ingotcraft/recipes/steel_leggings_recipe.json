@@ -1,0 +1,43 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "3": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "5": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "6": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "8": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:steel_legs",
+    "count": 1
+  }
+}

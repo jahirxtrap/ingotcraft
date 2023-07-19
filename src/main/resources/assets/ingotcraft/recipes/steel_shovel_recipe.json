@@ -1,0 +1,27 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:steel_shovel",
+    "count": 1
+  }
+}

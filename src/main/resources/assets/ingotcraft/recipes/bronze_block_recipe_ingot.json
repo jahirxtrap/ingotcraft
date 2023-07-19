@@ -1,0 +1,37 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    },
+    {
+      "item": "ingotcraft:bronze_ingot"
+    }
+  ],
+  "result": {
+    "item": "ingotcraft:bronze_block",
+    "count": 1
+  }
+}

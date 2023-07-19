@@ -1,0 +1,27 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:bronze_sword",
+    "count": 1
+  }
+}

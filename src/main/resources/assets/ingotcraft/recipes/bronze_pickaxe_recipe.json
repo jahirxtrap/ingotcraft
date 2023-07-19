@@ -1,0 +1,35 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "1": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "4": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "7": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:bronze_pickaxe",
+    "count": 1
+  }
+}

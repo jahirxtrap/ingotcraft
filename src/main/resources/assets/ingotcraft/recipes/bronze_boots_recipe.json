@@ -1,0 +1,30 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "2": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "3": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "5": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:bronze_boots",
+    "count": 1
+  }
+}
