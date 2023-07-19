@@ -1,26 +1,16 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.IngotcraftModElements;
-import com.jahirtrap.ingotcraft.itemgroup.IngotCraftItemGroup;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraftforge.registries.ObjectHolder;
+import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
+import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 
-@IngotcraftModElements.ModElement.Tag
-public class BronzeSwordItem extends IngotcraftModElements.ModElement {
-    @ObjectHolder("ingotcraft:bronze_sword")
-    public static final Item block = null;
-
-    public BronzeSwordItem(IngotcraftModElements instance) {
-        super(instance, 13);
-    }
-
-    @Override
-    public void initElements() {
-        elements.items.add(() -> new SwordItem(new IItemTier() {
+public class BronzeSwordItem extends SwordItem {
+    public BronzeSwordItem() {
+        super(new Tier() {
             public int getUses() {
                 return 350;
             }
@@ -42,9 +32,9 @@ public class BronzeSwordItem extends IngotcraftModElements.ModElement {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(BronzeIngotItem.block));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
             }
-        }, 3, -2.4f, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-        }.setRegistryName("bronze_sword"));
+        }, 3, -2.4f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        setRegistryName("bronze_sword");
     }
 }

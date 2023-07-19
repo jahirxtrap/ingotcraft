@@ -1,56 +1,43 @@
 package com.jahirtrap.ingotcraft.block;
 
-import com.jahirtrap.ingotcraft.IngotcraftModElements;
-import com.jahirtrap.ingotcraft.itemgroup.IngotCraftItemGroup;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.loot.LootContext;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockReader;
-import net.minecraftforge.common.ToolType;
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootContext;
 
 import java.util.Collections;
 import java.util.List;
 
-@IngotcraftModElements.ModElement.Tag
-public class TinBlock extends IngotcraftModElements.ModElement {
-    @ObjectHolder("ingotcraft:tin_block")
-    public static final Block block = null;
-
-    public TinBlock(IngotcraftModElements instance) {
-        super(instance, 26);
+public class TinBlock extends Block {
+    public TinBlock() {
+        super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
+        setRegistryName("tin_block");
     }
 
     @Override
-    public void initElements() {
-        elements.blocks.add(() -> new CustomBlock());
-        elements.items.add(() -> new BlockItem(block, new Item.Properties().tab(IngotCraftItemGroup.tab)).setRegistryName(block.getRegistryName()));
+    public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+        return 15;
     }
 
-    public static class CustomBlock extends Block {
-        public CustomBlock() {
-            super(Block.Properties.of(Material.METAL).sound(SoundType.METAL).strength(5f, 6f).lightLevel(s -> 0).harvestLevel(2)
-                    .harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops());
-            setRegistryName("tin_block");
-        }
+    @Override
+    public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+        if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+            return tieredItem.getTier().getLevel() >= 2;
+        return false;
+    }
 
-        @Override
-        public int getLightBlock(BlockState state, IBlockReader worldIn, BlockPos pos) {
-            return 15;
-        }
-
-        @Override
-        public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-            List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-            if (!dropsOriginal.isEmpty())
-                return dropsOriginal;
-            return Collections.singletonList(new ItemStack(this, 1));
-        }
+    @Override
+    public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+        List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+        if (!dropsOriginal.isEmpty())
+            return dropsOriginal;
+        return Collections.singletonList(new ItemStack(this, 1));
     }
 }

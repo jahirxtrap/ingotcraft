@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "ingotcraft:block/copper_block",
-    "particle": "ingotcraft:block/copper_block"
-  }
-}

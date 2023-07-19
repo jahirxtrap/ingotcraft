@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C",
+    "HR"
+  ],
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "H": {
+      "tag": "ingotcraft:hammers"
+    },
+    "R": {
+      "tag": "forge:raw_materials/iron"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:raw_steel",
+    "count": 1
+  }
+}

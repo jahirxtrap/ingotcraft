@@ -1,26 +1,16 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.IngotcraftModElements;
-import com.jahirtrap.ingotcraft.itemgroup.IngotCraftItemGroup;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraftforge.registries.ObjectHolder;
+import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
+import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 
-@IngotcraftModElements.ModElement.Tag
-public class SteelPickaxeItem extends IngotcraftModElements.ModElement {
-    @ObjectHolder("ingotcraft:steel_pickaxe")
-    public static final Item block = null;
-
-    public SteelPickaxeItem(IngotcraftModElements instance) {
-        super(instance, 5);
-    }
-
-    @Override
-    public void initElements() {
-        elements.items.add(() -> new PickaxeItem(new IItemTier() {
+public class SteelPickaxeItem extends PickaxeItem {
+    public SteelPickaxeItem() {
+        super(new Tier() {
             public int getUses() {
                 return 501;
             }
@@ -42,9 +32,9 @@ public class SteelPickaxeItem extends IngotcraftModElements.ModElement {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(SteelIngotItem.block));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT));
             }
-        }, 1, -2.7999999999999998f, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-        }.setRegistryName("steel_pickaxe"));
+        }, 1, -2.7999999999999998f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        setRegistryName("steel_pickaxe");
     }
 }

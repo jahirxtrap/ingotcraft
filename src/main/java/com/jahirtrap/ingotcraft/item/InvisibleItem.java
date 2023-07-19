@@ -1,46 +1,28 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.IngotcraftModElements;
-import com.jahirtrap.ingotcraft.itemgroup.IngotCraftItemGroup;
-import net.minecraft.block.Blocks;
-import net.minecraft.entity.Entity;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ObjectHolder;
 
-@IngotcraftModElements.ModElement.Tag
-public class InvisibleItem extends IngotcraftModElements.ModElement {
-    @ObjectHolder("ingotcraft:invisible_helmet")
-    public static final Item helmet = null;
-    @ObjectHolder("ingotcraft:invisible_chestplate")
-    public static final Item body = null;
-    @ObjectHolder("ingotcraft:invisible_leggings")
-    public static final Item legs = null;
-    @ObjectHolder("ingotcraft:invisible_boots")
-    public static final Item boots = null;
-
-    public InvisibleItem(IngotcraftModElements instance) {
-        super(instance, 31);
-    }
-
-    @Override
-    public void initElements() {
-        IArmorMaterial armormaterial = new IArmorMaterial() {
+public abstract class InvisibleItem extends ArmorItem {
+    public InvisibleItem(EquipmentSlot slot, Item.Properties properties) {
+        super(new ArmorMaterial() {
             @Override
-            public int getDurabilityForSlot(EquipmentSlotType slot) {
+            public int getDurabilityForSlot(EquipmentSlot slot) {
                 return new int[]{13, 15, 16, 11}[slot.getIndex()] * 15;
             }
 
             @Override
-            public int getDefenseForSlot(EquipmentSlotType slot) {
+            public int getDefenseForSlot(EquipmentSlot slot) {
                 return new int[]{2, 5, 6, 2}[slot.getIndex()];
             }
 
@@ -50,7 +32,7 @@ public class InvisibleItem extends IngotcraftModElements.ModElement {
             }
 
             @Override
-            public net.minecraft.util.SoundEvent getEquipSound() {
+            public SoundEvent getEquipSound() {
                 return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_generic"));
             }
 
@@ -59,7 +41,6 @@ public class InvisibleItem extends IngotcraftModElements.ModElement {
                 return Ingredient.of(new ItemStack(Blocks.GLASS));
             }
 
-            @OnlyIn(Dist.CLIENT)
             @Override
             public String getName() {
                 return "invisible";
@@ -74,31 +55,54 @@ public class InvisibleItem extends IngotcraftModElements.ModElement {
             public float getKnockbackResistance() {
                 return 0f;
             }
-        };
-        elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-            @Override
-            public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-                return "ingotcraft:textures/models/armor/invisible_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-            }
-        }.setRegistryName("invisible_helmet"));
-        elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-            @Override
-            public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-                return "ingotcraft:textures/models/armor/invisible_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-            }
-        }.setRegistryName("invisible_chestplate"));
-        elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-            @Override
-            public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-                return "ingotcraft:textures/models/armor/invisible_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-            }
-        }.setRegistryName("invisible_leggings"));
-        elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-            @Override
-            public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-                return "ingotcraft:textures/models/armor/invisible_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
-            }
-        }.setRegistryName("invisible_boots"));
+        }, slot, properties);
     }
 
+    public static class Helmet extends InvisibleItem {
+        public Helmet() {
+            super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            setRegistryName("invisible_helmet");
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "ingotcraft:textures/models/armor/invisible_layer_1.png";
+        }
+    }
+
+    public static class Chestplate extends InvisibleItem {
+        public Chestplate() {
+            super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            setRegistryName("invisible_chestplate");
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "ingotcraft:textures/models/armor/invisible_layer_1.png";
+        }
+    }
+
+    public static class Leggings extends InvisibleItem {
+        public Leggings() {
+            super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            setRegistryName("invisible_leggings");
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "ingotcraft:textures/models/armor/invisible_layer_2.png";
+        }
+    }
+
+    public static class Boots extends InvisibleItem {
+        public Boots() {
+            super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            setRegistryName("invisible_boots");
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "ingotcraft:textures/models/armor/invisible_layer_1.png";
+        }
+    }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ingotcraft:block/raw_lead_block",
+    "particle": "ingotcraft:block/raw_lead_block"
+  }
+}

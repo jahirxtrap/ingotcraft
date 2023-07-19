@@ -1,26 +1,16 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.IngotcraftModElements;
-import com.jahirtrap.ingotcraft.itemgroup.IngotCraftItemGroup;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraftforge.registries.ObjectHolder;
+import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
+import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 
-@IngotcraftModElements.ModElement.Tag
-public class SteelHammerItem extends IngotcraftModElements.ModElement {
-    @ObjectHolder("ingotcraft:steel_hammer")
-    public static final Item block = null;
-
-    public SteelHammerItem(IngotcraftModElements instance) {
-        super(instance, 37);
-    }
-
-    @Override
-    public void initElements() {
-        elements.items.add(() -> new PickaxeItem(new IItemTier() {
+public class SteelHammerItem extends PickaxeItem {
+    public SteelHammerItem() {
+        super(new Tier() {
             public int getUses() {
                 return 501;
             }
@@ -42,28 +32,29 @@ public class SteelHammerItem extends IngotcraftModElements.ModElement {
             }
 
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(SteelIngotItem.block));
+                return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT));
             }
-        }, 1, -3f, new Item.Properties().tab(IngotCraftItemGroup.tab)) {
-            @Override
-            public boolean hasCraftingRemainingItem() {
-                return true;
-            }
+        }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        setRegistryName("steel_hammer");
+    }
 
-            @Override
-            public ItemStack getContainerItem(ItemStack itemstack) {
-                ItemStack retval = new ItemStack(this);
-                retval.setDamageValue(itemstack.getDamageValue() + 1);
-                if (retval.getDamageValue() >= retval.getMaxDamage()) {
-                    return ItemStack.EMPTY;
-                }
-                return retval;
-            }
+    @Override
+    public boolean hasContainerItem(ItemStack stack) {
+        return true;
+    }
 
-            @Override
-            public boolean isRepairable(ItemStack itemstack) {
-                return false;
-            }
-        }.setRegistryName("steel_hammer"));
+    @Override
+    public ItemStack getContainerItem(ItemStack itemstack) {
+        ItemStack retval = new ItemStack(this);
+        retval.setDamageValue(itemstack.getDamageValue() + 1);
+        if (retval.getDamageValue() >= retval.getMaxDamage()) {
+            return ItemStack.EMPTY;
+        }
+        return retval;
+    }
+
+    @Override
+    public boolean isRepairable(ItemStack itemstack) {
+        return false;
     }
 }

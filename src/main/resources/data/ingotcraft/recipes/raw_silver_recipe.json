@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HR"
+  ],
+  "key": {
+    "H": {
+      "tag": "ingotcraft:hammers"
+    },
+    "R": {
+      "tag": "forge:raw_materials/iron"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:raw_silver",
+    "count": 1
+  }
+}
