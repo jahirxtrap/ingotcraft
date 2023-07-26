@@ -80,7 +80,7 @@ repositories { }
 
 dependencies {
     implementation 'dev.s7a:base64-itemstack:1.0.0'
-    minecraft 'net.minecraftforge:forge:1.19.4-45.0.40'
+    minecraft 'net.minecraftforge:forge:1.19.4-45.1.0'
 }
 
 jar {
