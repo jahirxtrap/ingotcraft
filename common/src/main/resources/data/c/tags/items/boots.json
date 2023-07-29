@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:boots/bronze",
+    "#c:boots/invisible",
+    "#c:boots/reinforced_invisible",
+    "#c:boots/steel"
+  ]
+}

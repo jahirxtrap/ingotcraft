@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "I",
+    "R"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:steel_ingots"
+    },
+    "R": {
+      "tag": "c:wooden_rods"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:steel_sword",
+    "count": 1
+  }
+}

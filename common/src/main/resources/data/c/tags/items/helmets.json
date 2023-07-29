@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:helmets/bronze",
+    "#c:helmets/invisible",
+    "#c:helmets/reinforced_invisible",
+    "#c:helmets/steel"
+  ]
+}

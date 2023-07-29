@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:leggings/bronze",
+    "#c:leggings/invisible",
+    "#c:leggings/reinforced_invisible",
+    "#c:leggings/steel"
+  ]
+}
