@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L",
+    "HR"
+  ],
+  "key": {
+    "L": {
+      "tag": "c:lapis_lazulis"
+    },
+    "H": {
+      "tag": "ingotcraft:hammers"
+    },
+    "R": {
+      "tag": "c:raw_gold_ores"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:raw_lead",
+    "count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    },
+    {
+      "item": "ingotcraft:lead_nugget"
+    }
+  ],
+  "result": {
+    "item": "ingotcraft:lead_ingot",
+    "count": 1
+  }
+}

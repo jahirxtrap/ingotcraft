@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "R",
+    "R"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:bronze_ingots"
+    },
+    "R": {
+      "tag": "c:wooden_rods"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:bronze_shovel",
+    "count": 1
+  }
+}

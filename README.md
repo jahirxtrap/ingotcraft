@@ -14,7 +14,7 @@ Easy crafting for base metals
 - Hammer (Iron, Golden, Diamond, Netherite, Steel, Bronze)
 - Invisible armor and Reinforced invisible armor (If <a href="https://www.curseforge.com/minecraft/mc-mods/security-craft" target="_blank">Security Craft mod</a> mod is loaded, the recipe will change to be using reinforced glass)
 
-<strong>Compatible with:</strong>
+<strong>Forge compatible with:</strong>
 
 - <a href="https://www.curseforge.com/minecraft/mc-mods/security-craft" target="_blank">Security Craft mod</a>
 
