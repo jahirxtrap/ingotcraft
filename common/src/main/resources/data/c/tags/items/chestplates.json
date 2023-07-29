@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:chestplates/bronze",
+    "#c:chestplates/invisible",
+    "#c:chestplates/reinforced_invisible",
+    "#c:chestplates/steel"
+  ]
+}

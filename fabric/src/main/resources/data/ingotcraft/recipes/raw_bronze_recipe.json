@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A",
+    "HR"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:raw_tin_ores"
+    },
+    "H": {
+      "tag": "ingotcraft:hammers"
+    },
+    "R": {
+      "tag": "c:raw_copper_ores"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:raw_bronze",
+    "count": 2
+  }
+}
