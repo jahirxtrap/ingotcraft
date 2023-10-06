@@ -25,7 +25,8 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
     implementation project(":common")
 
-    modImplementation(implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:0.2.0-beta.9")))
+    modImplementation include(fileTree(dir: 'libs', include: ['*.jar']))
+    modImplementation(implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:0.2.0-rc.2")))
 }
 
 loom {
@@ -79,6 +80,13 @@ processResources {
     }
     exclude '**/data/forge/**'
     from project(":common").sourceSets.main.resources
+}
+
+jar {
+    from('libs') {
+        include '*.jar'
+        into('META-INF/jars')
+    }
 }
 
 jar.finalizedBy('remapJar')
