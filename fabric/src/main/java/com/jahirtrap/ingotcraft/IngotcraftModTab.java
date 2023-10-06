@@ -70,6 +70,7 @@ public class IngotcraftModTab {
                     event.accept(IngotcraftModItems.GOLDEN_HAMMER);
                     event.accept(IngotcraftModItems.DIAMOND_HAMMER);
                     event.accept(IngotcraftModItems.NETHERITE_HAMMER);
+                    event.accept(IngotcraftModItems.ENDERITE_HAMMER);
                     event.accept(IngotcraftModItems.STEEL_HAMMER);
                     event.accept(IngotcraftModItems.BRONZE_HAMMER);
                 })

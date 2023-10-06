@@ -28,6 +28,6 @@
 		"fabric": "*"
 	},
 	"jars": [{
-      		"file": "META-INF/jars/mixinextras-fabric-0.2.0-beta.9.jar"
+      		"file": "META-INF/jars/mixinextras-fabric-0.2.0-rc.2.jar"
     	}]
 }

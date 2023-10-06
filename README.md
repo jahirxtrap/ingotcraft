@@ -11,11 +11,12 @@ Easy crafting for base metals
 - Silver (Raw, Raw Block, Ingot, Block, Nugget)
 - Tin (Raw, Raw Block, Ingot, Block, Nugget)
 - Copper (Nugget)
-- Hammer (Iron, Golden, Diamond, Netherite, Steel, Bronze)
+- Hammer (Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze)
 - Invisible armor and Reinforced invisible armor (If <a href="https://www.curseforge.com/minecraft/mc-mods/security-craft" target="_blank">Security Craft mod</a> mod is loaded, the recipe will change to be using reinforced glass)
 
-<strong>Forge compatible with:</strong>
+<strong>Compatible with:</strong>
 
+- <a href="https://www.curseforge.com/minecraft/mc-mods/enderite-mod-for-forge" target="_blank">Enderite mod</a>
 - <a href="https://www.curseforge.com/minecraft/mc-mods/security-craft" target="_blank">Security Craft mod</a>
 
 <img src="https://cdn.modrinth.com/data/Kma1RCF3/images/af86e6613875dabb39280d2fa62723f16bfc8384.png"><br>
@@ -25,6 +26,6 @@ Easy crafting for base metals
 <details>
   <summary>Spoiler</summary>
 
-<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/c0c9150d234377e09c8fb28bc6b28282d131005a.png" width="500">
+<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/fedda32be06d40e62c0e6286e5e65a3bf549b745.png" width="500">
 
 </details>
