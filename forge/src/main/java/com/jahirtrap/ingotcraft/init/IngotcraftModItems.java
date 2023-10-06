@@ -60,18 +60,15 @@ public class IngotcraftModItems {
     public static final RegistryObject<Item> INVISIBLE_CHESTPLATE = REGISTRY.register("invisible_chestplate", () -> new InvisibleItem.Chestplate());
     public static final RegistryObject<Item> INVISIBLE_LEGGINGS = REGISTRY.register("invisible_leggings", () -> new InvisibleItem.Leggings());
     public static final RegistryObject<Item> INVISIBLE_BOOTS = REGISTRY.register("invisible_boots", () -> new InvisibleItem.Boots());
-    public static final RegistryObject<Item> REINFORCED_INVISIBLE_HELMET = REGISTRY.register("reinforced_invisible_helmet",
-            () -> new ReinforcedInvisibleItem.Helmet());
-    public static final RegistryObject<Item> REINFORCED_INVISIBLE_CHESTPLATE = REGISTRY.register("reinforced_invisible_chestplate",
-            () -> new ReinforcedInvisibleItem.Chestplate());
-    public static final RegistryObject<Item> REINFORCED_INVISIBLE_LEGGINGS = REGISTRY.register("reinforced_invisible_leggings",
-            () -> new ReinforcedInvisibleItem.Leggings());
-    public static final RegistryObject<Item> REINFORCED_INVISIBLE_BOOTS = REGISTRY.register("reinforced_invisible_boots",
-            () -> new ReinforcedInvisibleItem.Boots());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_HELMET = REGISTRY.register("reinforced_invisible_helmet", () -> new ReinforcedInvisibleItem.Helmet());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_CHESTPLATE = REGISTRY.register("reinforced_invisible_chestplate", () -> new ReinforcedInvisibleItem.Chestplate());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_LEGGINGS = REGISTRY.register("reinforced_invisible_leggings", () -> new ReinforcedInvisibleItem.Leggings());
+    public static final RegistryObject<Item> REINFORCED_INVISIBLE_BOOTS = REGISTRY.register("reinforced_invisible_boots", () -> new ReinforcedInvisibleItem.Boots());
     public static final RegistryObject<Item> IRON_HAMMER = REGISTRY.register("iron_hammer", () -> new IronHammerItem());
     public static final RegistryObject<Item> GOLDEN_HAMMER = REGISTRY.register("golden_hammer", () -> new GoldenHammerItem());
     public static final RegistryObject<Item> DIAMOND_HAMMER = REGISTRY.register("diamond_hammer", () -> new DiamondHammerItem());
     public static final RegistryObject<Item> NETHERITE_HAMMER = REGISTRY.register("netherite_hammer", () -> new NetheriteHammerItem());
+    public static final RegistryObject<Item> ENDERITE_HAMMER = REGISTRY.register("enderite_hammer", () -> new EnderiteHammerItem());
     public static final RegistryObject<Item> STEEL_HAMMER = REGISTRY.register("steel_hammer", () -> new SteelHammerItem());
     public static final RegistryObject<Item> BRONZE_HAMMER = REGISTRY.register("bronze_hammer", () -> new BronzeHammerItem());
 

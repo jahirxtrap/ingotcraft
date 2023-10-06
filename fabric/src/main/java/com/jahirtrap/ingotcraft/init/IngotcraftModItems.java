@@ -59,18 +59,15 @@ public class IngotcraftModItems {
     public static final Item INVISIBLE_CHESTPLATE = RegistryObject("invisible_chestplate", new InvisibleItem.Chestplate());
     public static final Item INVISIBLE_LEGGINGS = RegistryObject("invisible_leggings", new InvisibleItem.Leggings());
     public static final Item INVISIBLE_BOOTS = RegistryObject("invisible_boots", new InvisibleItem.Boots());
-    public static final Item REINFORCED_INVISIBLE_HELMET = RegistryObject("reinforced_invisible_helmet",
-            new ReinforcedInvisibleItem.Helmet());
-    public static final Item REINFORCED_INVISIBLE_CHESTPLATE = RegistryObject("reinforced_invisible_chestplate",
-            new ReinforcedInvisibleItem.Chestplate());
-    public static final Item REINFORCED_INVISIBLE_LEGGINGS = RegistryObject("reinforced_invisible_leggings",
-            new ReinforcedInvisibleItem.Leggings());
-    public static final Item REINFORCED_INVISIBLE_BOOTS = RegistryObject("reinforced_invisible_boots",
-            new ReinforcedInvisibleItem.Boots());
+    public static final Item REINFORCED_INVISIBLE_HELMET = RegistryObject("reinforced_invisible_helmet", new ReinforcedInvisibleItem.Helmet());
+    public static final Item REINFORCED_INVISIBLE_CHESTPLATE = RegistryObject("reinforced_invisible_chestplate", new ReinforcedInvisibleItem.Chestplate());
+    public static final Item REINFORCED_INVISIBLE_LEGGINGS = RegistryObject("reinforced_invisible_leggings", new ReinforcedInvisibleItem.Leggings());
+    public static final Item REINFORCED_INVISIBLE_BOOTS = RegistryObject("reinforced_invisible_boots", new ReinforcedInvisibleItem.Boots());
     public static final Item IRON_HAMMER = RegistryObject("iron_hammer", new IronHammerItem());
     public static final Item GOLDEN_HAMMER = RegistryObject("golden_hammer", new GoldenHammerItem());
     public static final Item DIAMOND_HAMMER = RegistryObject("diamond_hammer", new DiamondHammerItem());
     public static final Item NETHERITE_HAMMER = RegistryObject("netherite_hammer", new NetheriteHammerItem());
+    public static final Item ENDERITE_HAMMER = RegistryObject("enderite_hammer", new EnderiteHammerItem());
     public static final Item STEEL_HAMMER = RegistryObject("steel_hammer", new SteelHammerItem());
     public static final Item BRONZE_HAMMER = RegistryObject("bronze_hammer", new BronzeHammerItem());
 
