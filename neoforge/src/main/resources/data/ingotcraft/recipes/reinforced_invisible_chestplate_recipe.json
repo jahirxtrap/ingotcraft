@@ -1,0 +1,30 @@
+{
+  "group": "ingotcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:glass/colorless"
+    },
+    "D": {
+      "item": "minecraft:diamond_chestplate"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:reinforced_invisible_chestplate",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "securitycraft"
+      }
+    }
+  ]
+}

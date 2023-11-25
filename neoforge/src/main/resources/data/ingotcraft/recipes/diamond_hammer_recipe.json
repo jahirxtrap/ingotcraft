@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  G",
+    "RRS",
+    "  G"
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:gems/diamond"
+    },
+    "R": {
+      "tag": "forge:rods/wooden"
+    },
+    "S": {
+      "tag": "forge:storage_blocks/diamond"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:diamond_hammer",
+    "count": 1
+  }
+}

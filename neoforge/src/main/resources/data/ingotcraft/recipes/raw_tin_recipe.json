@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R",
+    "HA"
+  ],
+  "key": {
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "H": {
+      "tag": "ingotcraft:hammers"
+    },
+    "A": {
+      "tag": "forge:raw_materials/iron"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:raw_tin",
+    "count": 1
+  }
+}
