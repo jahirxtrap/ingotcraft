@@ -22,7 +22,8 @@ public class IngotcraftModBlocks {
     public static final Block SILVER_BLOCK = RegistryObject("silver_block", new SilverBlock());
     public static final Block TIN_BLOCK = RegistryObject("tin_block", new TinBlock());
 
-    public static void init() { }
+    public static void init() {
+    }
 
     public static Block RegistryObject(String name, Block block) {
         Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MODID, name), new BlockItem(block, new Item.Properties()));
