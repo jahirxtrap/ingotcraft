@@ -59,7 +59,8 @@ public class IngotcraftModItems {
     public static final Item STEEL_HAMMER = RegistryObject("steel_hammer", new SteelHammerItem());
     public static final Item BRONZE_HAMMER = RegistryObject("bronze_hammer", new BronzeHammerItem());
 
-    public static void init() { }
+    public static void init() {
+    }
 
     public static Item RegistryObject(String name, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MODID, name), item);
