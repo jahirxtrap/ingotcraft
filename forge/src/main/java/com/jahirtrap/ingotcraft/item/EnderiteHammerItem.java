@@ -1,6 +1,8 @@
 package com.jahirtrap.ingotcraft.item;
 
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public class EnderiteHammerItem extends PickaxeItem {

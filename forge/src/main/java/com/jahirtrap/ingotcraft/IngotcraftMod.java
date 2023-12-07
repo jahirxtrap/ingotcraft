@@ -15,7 +15,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class IngotcraftMod {
 
     public static final String MODID = "ingotcraft";
-
     public static CreativeModeTab MODTAB;
 
     public IngotcraftMod() {
