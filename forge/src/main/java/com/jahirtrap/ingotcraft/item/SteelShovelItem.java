@@ -1,7 +1,7 @@
 package com.jahirtrap.ingotcraft.item;
 
+import com.jahirtrap.ingotcraft.IngotcraftModTab;
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShovelItem;
@@ -34,6 +34,6 @@ public class SteelShovelItem extends ShovelItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(IngotcraftModItems.STEEL_INGOT.get()));
             }
-        }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+        }, 1, -3f, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT));
     }
 }

@@ -1,7 +1,9 @@
 package com.jahirtrap.ingotcraft.item;
 
 import com.jahirtrap.ingotcraft.util.RepairableItem;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.TAB_INGOTCRAFT;
