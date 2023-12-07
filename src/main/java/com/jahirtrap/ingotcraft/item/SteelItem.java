@@ -1,7 +1,7 @@
 package com.jahirtrap.ingotcraft.item;
 
+import com.jahirtrap.ingotcraft.IngotcraftModTab;
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
@@ -60,7 +60,7 @@ public abstract class SteelItem extends ArmorItem {
 
     public static class Helmet extends SteelItem {
         public Helmet() {
-            super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(EquipmentSlot.HEAD, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT));
         }
 
         @Override
@@ -71,7 +71,7 @@ public abstract class SteelItem extends ArmorItem {
 
     public static class Chestplate extends SteelItem {
         public Chestplate() {
-            super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(EquipmentSlot.CHEST, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT));
         }
 
         @Override
@@ -82,7 +82,7 @@ public abstract class SteelItem extends ArmorItem {
 
     public static class Leggings extends SteelItem {
         public Leggings() {
-            super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(EquipmentSlot.LEGS, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT));
         }
 
         @Override
@@ -93,7 +93,7 @@ public abstract class SteelItem extends ArmorItem {
 
     public static class Boots extends SteelItem {
         public Boots() {
-            super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT));
+            super(EquipmentSlot.FEET, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT));
         }
 
         @Override

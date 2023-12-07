@@ -1,13 +1,13 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
+import com.jahirtrap.ingotcraft.IngotcraftModTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 
 public class RawTinItem extends Item {
     public RawTinItem() {
-        super(new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
+        super(new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
     }
 
     @Override

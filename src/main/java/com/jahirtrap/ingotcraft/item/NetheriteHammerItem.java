@@ -1,6 +1,6 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.init.IngotcraftModTabs;
+import com.jahirtrap.ingotcraft.IngotcraftModTab;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 
@@ -30,7 +30,7 @@ public class NetheriteHammerItem extends PickaxeItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(new ItemStack(Items.NETHERITE_INGOT));
             }
-        }, 1, -3f, new Item.Properties().tab(IngotcraftModTabs.TAB_INGOT_CRAFT).fireResistant());
+        }, 1, -3f, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT).fireResistant());
     }
 
     @Override
