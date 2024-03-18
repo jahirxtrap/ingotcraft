@@ -13,18 +13,8 @@ import net.minecraft.world.item.ItemStack;
 public class IngotcraftModTab {
 
     private static final CreativeModeTab TAB_INGOTCRAFT = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(IngotcraftModItems.STEEL_INGOT))
+            .icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER))
             .displayItems((features, event) -> {
-                event.accept(IngotcraftModItems.STEEL_SWORD);
-                event.accept(IngotcraftModItems.STEEL_PICKAXE);
-                event.accept(IngotcraftModItems.STEEL_AXE);
-                event.accept(IngotcraftModItems.STEEL_SHOVEL);
-                event.accept(IngotcraftModItems.STEEL_HOE);
-                event.accept(IngotcraftModItems.BRONZE_SWORD);
-                event.accept(IngotcraftModItems.BRONZE_PICKAXE);
-                event.accept(IngotcraftModItems.BRONZE_AXE);
-                event.accept(IngotcraftModItems.BRONZE_SHOVEL);
-                event.accept(IngotcraftModItems.BRONZE_HOE);
                 event.accept(IngotcraftModItems.RAW_STEEL);
                 event.accept(IngotcraftModItems.RAW_BRONZE);
                 event.accept(IngotcraftModItems.RAW_LEAD);
@@ -51,6 +41,16 @@ public class IngotcraftModTab {
                 event.accept(IngotcraftModItems.SILVER_NUGGET);
                 event.accept(IngotcraftModItems.TIN_NUGGET);
                 event.accept(IngotcraftModItems.COPPER_NUGGET);
+                event.accept(IngotcraftModItems.STEEL_SWORD);
+                event.accept(IngotcraftModItems.STEEL_PICKAXE);
+                event.accept(IngotcraftModItems.STEEL_AXE);
+                event.accept(IngotcraftModItems.STEEL_SHOVEL);
+                event.accept(IngotcraftModItems.STEEL_HOE);
+                event.accept(IngotcraftModItems.BRONZE_SWORD);
+                event.accept(IngotcraftModItems.BRONZE_PICKAXE);
+                event.accept(IngotcraftModItems.BRONZE_AXE);
+                event.accept(IngotcraftModItems.BRONZE_SHOVEL);
+                event.accept(IngotcraftModItems.BRONZE_HOE);
                 event.accept(IngotcraftModItems.STEEL_HELMET);
                 event.accept(IngotcraftModItems.STEEL_CHESTPLATE);
                 event.accept(IngotcraftModItems.STEEL_LEGGINGS);
@@ -67,6 +67,7 @@ public class IngotcraftModTab {
                 event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_CHESTPLATE);
                 event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_LEGGINGS);
                 event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_BOOTS);
+                event.accept(IngotcraftModItems.STONE_HAMMER);
                 event.accept(IngotcraftModItems.IRON_HAMMER);
                 event.accept(IngotcraftModItems.GOLDEN_HAMMER);
                 event.accept(IngotcraftModItems.DIAMOND_HAMMER);

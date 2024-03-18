@@ -13,6 +13,6 @@ public class IngotcraftMod {
     public IngotcraftMod(IEventBus bus) {
         IngotcraftModBlocks.REGISTRY.register(bus);
         IngotcraftModItems.REGISTRY.register(bus);
-        IngotcraftModTab.init();
+        IngotcraftModTab.init(bus);
     }
 }

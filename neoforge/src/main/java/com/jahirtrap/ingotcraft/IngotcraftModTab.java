@@ -5,7 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -15,18 +15,8 @@ public class IngotcraftModTab {
     private static final DeferredRegister<CreativeModeTab> TAB_REGISTER = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IngotcraftMod.MODID);
 
     public static final Supplier<CreativeModeTab> TAB_INGOTCRAFT = TAB_REGISTER.register("tabingot_craft", () -> CreativeModeTab.builder()
-            .icon(() -> new ItemStack(IngotcraftModItems.STEEL_INGOT.get()))
+            .icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get()))
             .displayItems((features, event) -> {
-                event.accept(IngotcraftModItems.STEEL_SWORD.get());
-                event.accept(IngotcraftModItems.STEEL_PICKAXE.get());
-                event.accept(IngotcraftModItems.STEEL_AXE.get());
-                event.accept(IngotcraftModItems.STEEL_SHOVEL.get());
-                event.accept(IngotcraftModItems.STEEL_HOE.get());
-                event.accept(IngotcraftModItems.BRONZE_SWORD.get());
-                event.accept(IngotcraftModItems.BRONZE_PICKAXE.get());
-                event.accept(IngotcraftModItems.BRONZE_AXE.get());
-                event.accept(IngotcraftModItems.BRONZE_SHOVEL.get());
-                event.accept(IngotcraftModItems.BRONZE_HOE.get());
                 event.accept(IngotcraftModItems.RAW_STEEL.get());
                 event.accept(IngotcraftModItems.RAW_BRONZE.get());
                 event.accept(IngotcraftModItems.RAW_LEAD.get());
@@ -53,6 +43,16 @@ public class IngotcraftModTab {
                 event.accept(IngotcraftModItems.SILVER_NUGGET.get());
                 event.accept(IngotcraftModItems.TIN_NUGGET.get());
                 event.accept(IngotcraftModItems.COPPER_NUGGET.get());
+                event.accept(IngotcraftModItems.STEEL_SWORD.get());
+                event.accept(IngotcraftModItems.STEEL_PICKAXE.get());
+                event.accept(IngotcraftModItems.STEEL_AXE.get());
+                event.accept(IngotcraftModItems.STEEL_SHOVEL.get());
+                event.accept(IngotcraftModItems.STEEL_HOE.get());
+                event.accept(IngotcraftModItems.BRONZE_SWORD.get());
+                event.accept(IngotcraftModItems.BRONZE_PICKAXE.get());
+                event.accept(IngotcraftModItems.BRONZE_AXE.get());
+                event.accept(IngotcraftModItems.BRONZE_SHOVEL.get());
+                event.accept(IngotcraftModItems.BRONZE_HOE.get());
                 event.accept(IngotcraftModItems.STEEL_HELMET.get());
                 event.accept(IngotcraftModItems.STEEL_CHESTPLATE.get());
                 event.accept(IngotcraftModItems.STEEL_LEGGINGS.get());
@@ -69,6 +69,7 @@ public class IngotcraftModTab {
                 event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_CHESTPLATE.get());
                 event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_LEGGINGS.get());
                 event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_BOOTS.get());
+                event.accept(IngotcraftModItems.STONE_HAMMER.get());
                 event.accept(IngotcraftModItems.IRON_HAMMER.get());
                 event.accept(IngotcraftModItems.GOLDEN_HAMMER.get());
                 event.accept(IngotcraftModItems.DIAMOND_HAMMER.get());
@@ -80,8 +81,8 @@ public class IngotcraftModTab {
             .title(Component.translatable("itemGroup.tabingot_craft"))
             .build());
 
-    public static void init() {
-        TAB_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
+    public static void init(IEventBus bus) {
+        TAB_REGISTER.register(bus);
     }
 
 }

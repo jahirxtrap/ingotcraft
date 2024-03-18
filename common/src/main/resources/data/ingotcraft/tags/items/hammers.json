@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ingotcraft:stone_hammer",
     "ingotcraft:iron_hammer",
     "ingotcraft:golden_hammer",
     "ingotcraft:diamond_hammer",
