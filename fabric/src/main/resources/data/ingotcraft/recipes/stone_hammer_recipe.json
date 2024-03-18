@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  T",
+    "RRS",
+    "  T"
+  ],
+  "key": {
+    "T": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "R": {
+      "tag": "c:wooden_rods"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:stone_hammer",
+    "count": 1
+  }
+}

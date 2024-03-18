@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ingotcraft:bronze_ingot",
+    "ingotcraft:lead_ingot",
+    "ingotcraft:steel_ingot",
+    "ingotcraft:silver_ingot",
+    "ingotcraft:tin_ingot"
+  ]
+}
