@@ -8,15 +8,10 @@ public class IngotcraftModTab {
     public static CreativeModeTab TAB_INGOT_CRAFT;
 
     public static void init() {
-        TAB_INGOT_CRAFT = new CreativeModeTab("tabingot_craft") {
+        TAB_INGOT_CRAFT = new CreativeModeTab("ingotcraft.tabingot_craft") {
             @Override
             public ItemStack makeIcon() {
-                return new ItemStack(IngotcraftModItems.STEEL_INGOT.get());
-            }
-
-            @Override
-            public boolean hasSearchBar() {
-                return false;
+                return new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get());
             }
         };
     }

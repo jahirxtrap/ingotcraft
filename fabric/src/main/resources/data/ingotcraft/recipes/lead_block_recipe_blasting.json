@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 9,
+  "cookingtime": 900,
+  "ingredient": {
+    "item": "ingotcraft:raw_lead_block"
+  },
+  "result": "ingotcraft:lead_block"
+}

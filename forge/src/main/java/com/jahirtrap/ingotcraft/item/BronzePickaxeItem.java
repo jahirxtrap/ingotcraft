@@ -1,39 +1,12 @@
 package com.jahirtrap.ingotcraft.item;
 
-import com.jahirtrap.ingotcraft.IngotcraftModTab;
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
-public class BronzePickaxeItem extends PickaxeItem {
+public class BronzePickaxeItem extends BasePickaxeItem {
     public BronzePickaxeItem() {
-        super(new Tier() {
-            public int getUses() {
-                return 350;
-            }
-
-            public float getSpeed() {
-                return 7f;
-            }
-
-            public float getAttackDamageBonus() {
-                return 2f;
-            }
-
-            public int getLevel() {
-                return 2;
-            }
-
-            public int getEnchantmentValue() {
-                return 16;
-            }
-
-            public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get()));
-            }
-        }, 1, -2.7999999999999998f, new Item.Properties().tab(IngotcraftModTab.TAB_INGOT_CRAFT));
+        super(350, 7f, 2f, 2, 16, Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT.get())), new Item.Properties());
     }
 }

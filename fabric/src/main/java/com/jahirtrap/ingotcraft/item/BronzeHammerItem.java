@@ -1,61 +1,12 @@
 package com.jahirtrap.ingotcraft.item;
 
 import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
-import com.jahirtrap.ingotcraft.util.RepairableItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import static com.jahirtrap.ingotcraft.IngotcraftMod.TAB_INGOTCRAFT;
-
-public class BronzeHammerItem extends PickaxeItem implements RepairableItem {
+public class BronzeHammerItem extends BaseHammerItem {
     public BronzeHammerItem() {
-        super(new Tier() {
-            public int getUses() {
-                return 350;
-            }
-
-            public float getSpeed() {
-                return 8f;
-            }
-
-            public float getAttackDamageBonus() {
-                return 8f;
-            }
-
-            public int getLevel() {
-                return 2;
-            }
-
-            public int getEnchantmentValue() {
-                return 16;
-            }
-
-            public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT));
-            }
-        }, 1, -3f, new Item.Properties().tab(TAB_INGOTCRAFT));
-    }
-
-    @Override
-    public boolean hasCraftingRemainingItem() {
-        return true;
-    }
-
-    @Override
-    public ItemStack getRecipeRemainder(ItemStack itemstack) {
-        ItemStack retval = new ItemStack(this);
-        retval.setDamageValue(itemstack.getDamageValue() + 1);
-        if (retval.getDamageValue() >= retval.getMaxDamage()) {
-            return ItemStack.EMPTY;
-        }
-        return retval;
-    }
-
-    @Override
-    public boolean isRepairable() {
-        return false;
+        super(350, 8f, 8f, 2, 16, Ingredient.of(new ItemStack(IngotcraftModItems.BRONZE_INGOT)), new Item.Properties());
     }
 }
