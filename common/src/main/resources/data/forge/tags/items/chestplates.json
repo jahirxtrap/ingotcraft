@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:chestplates/bronze",
-    "#forge:chestplates/invisible",
-    "#forge:chestplates/reinforced_invisible",
-    "#forge:chestplates/steel"
-  ]
-}
