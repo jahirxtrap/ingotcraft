@@ -1,0 +1,9 @@
+{
+  "asset_name": "lead",
+  "description": {
+    "color": "#626E86",
+    "translate": "trim_material.ingotcraft.lead"
+  },
+  "ingredient": "ingotcraft:lead_ingot",
+  "item_model_index": 0.9
+}
