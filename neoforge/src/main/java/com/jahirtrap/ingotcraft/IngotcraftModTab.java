@@ -14,7 +14,7 @@ public class IngotcraftModTab {
 
     private static final DeferredRegister<CreativeModeTab> TAB_REGISTER = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IngotcraftMod.MODID);
 
-    public static final Supplier<CreativeModeTab> TAB_INGOTCRAFT = TAB_REGISTER.register("tabingot_craft", () -> CreativeModeTab.builder()
+    public static final Supplier<CreativeModeTab> TAB_INGOTCRAFT = TAB_REGISTER.register("tab_ingotcraft", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get()))
             .displayItems((features, event) -> {
                 event.accept(IngotcraftModItems.RAW_STEEL.get());
@@ -78,7 +78,7 @@ public class IngotcraftModTab {
                 event.accept(IngotcraftModItems.STEEL_HAMMER.get());
                 event.accept(IngotcraftModItems.BRONZE_HAMMER.get());
             })
-            .title(Component.translatable("itemGroup.tabingot_craft"))
+            .title(Component.translatable("itemGroup.ingotcraft.tab_ingotcraft"))
             .build());
 
     public static void init(IEventBus bus) {

@@ -5,7 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -13,7 +13,7 @@ public class IngotcraftModTab {
 
     private static final DeferredRegister<CreativeModeTab> TAB_REGISTER = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IngotcraftMod.MODID);
 
-    public static final RegistryObject<CreativeModeTab> TAB_INGOTCRAFT = TAB_REGISTER.register("tabingot_craft", () -> CreativeModeTab.builder()
+    public static final RegistryObject<CreativeModeTab> TAB_INGOTCRAFT = TAB_REGISTER.register("tab_ingotcraft", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get()))
             .displayItems((features, event) -> {
                 event.accept(IngotcraftModItems.RAW_STEEL.get());
@@ -77,11 +77,11 @@ public class IngotcraftModTab {
                 event.accept(IngotcraftModItems.STEEL_HAMMER.get());
                 event.accept(IngotcraftModItems.BRONZE_HAMMER.get());
             })
-            .title(Component.translatable("itemGroup.tabingot_craft"))
+            .title(Component.translatable("itemGroup.ingotcraft.tab_ingotcraft"))
             .build());
 
-    public static void init() {
-        TAB_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
+    public static void init(IEventBus bus) {
+        TAB_REGISTER.register(bus);
     }
 
 }
