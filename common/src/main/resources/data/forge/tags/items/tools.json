@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#ingotcraft:hammers",
+    "#forge:tools/axes",
+    "#forge:tools/hoes",
+    "#forge:tools/pickaxes",
+    "#forge:tools/shovels",
+    "#forge:tools/swords"
+  ]
+}
