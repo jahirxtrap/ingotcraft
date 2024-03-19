@@ -5,10 +5,10 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class IngotcraftModTab {
-    public static CreativeModeTab TAB_INGOT_CRAFT;
+    public static CreativeModeTab TAB_INGOTCRAFT;
 
     public static void init() {
-        TAB_INGOT_CRAFT = new CreativeModeTab("ingotcraft.tabingot_craft") {
+        TAB_INGOTCRAFT = new CreativeModeTab("ingotcraft.tab_ingotcraft") {
             @Override
             public ItemStack makeIcon() {
                 return new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get());

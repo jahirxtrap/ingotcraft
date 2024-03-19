@@ -4,7 +4,7 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public class BasePickaxeItem extends PickaxeItem {
     public BasePickaxeItem(int uses, float speed, float damage, int level, int enchantment, Ingredient repair, Properties properties) {
@@ -32,6 +32,6 @@ public class BasePickaxeItem extends PickaxeItem {
             public Ingredient getRepairIngredient() {
                 return repair;
             }
-        }, 1, -2.8f, properties.tab(TAB_INGOT_CRAFT));
+        }, 1, -2.8f, properties.tab(TAB_INGOTCRAFT));
     }
 }

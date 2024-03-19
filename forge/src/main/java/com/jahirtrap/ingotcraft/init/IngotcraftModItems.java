@@ -9,7 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public class IngotcraftModItems {
     public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, IngotcraftMod.MODID);
@@ -75,6 +75,6 @@ public class IngotcraftModItems {
     public static final RegistryObject<Item> BRONZE_HAMMER = REGISTRY.register("bronze_hammer", BronzeHammerItem::new);
 
     private static RegistryObject<Item> block(RegistryObject<Block> block) {
-        return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(TAB_INGOT_CRAFT)));
+        return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(TAB_INGOTCRAFT)));
     }
 }

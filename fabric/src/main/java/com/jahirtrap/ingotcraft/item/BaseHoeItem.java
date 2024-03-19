@@ -4,7 +4,7 @@ import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public class BaseHoeItem extends HoeItem {
     public BaseHoeItem(int uses, float speed, float damage, int level, int enchantment, Ingredient repair, Properties properties) {
@@ -32,6 +32,6 @@ public class BaseHoeItem extends HoeItem {
             public Ingredient getRepairIngredient() {
                 return repair;
             }
-        }, 0, -1f, properties.tab(TAB_INGOT_CRAFT));
+        }, 0, -1f, properties.tab(TAB_INGOTCRAFT));
     }
 }

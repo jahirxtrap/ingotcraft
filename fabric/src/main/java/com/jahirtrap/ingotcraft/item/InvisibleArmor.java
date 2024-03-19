@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public abstract class InvisibleArmor extends ArmorItem {
     public InvisibleArmor(EquipmentSlot slot) {
@@ -42,7 +42,7 @@ public abstract class InvisibleArmor extends ArmorItem {
 
             @Override
             public String getName() {
-                return "ingotcraft:invisible";
+                return "ingotcraft_invisible";
             }
 
             @Override
@@ -54,7 +54,7 @@ public abstract class InvisibleArmor extends ArmorItem {
             public float getKnockbackResistance() {
                 return 0f;
             }
-        }, slot, new Item.Properties().tab(TAB_INGOT_CRAFT));
+        }, slot, new Item.Properties().tab(TAB_INGOTCRAFT));
     }
 
     public static class Helmet extends InvisibleArmor {

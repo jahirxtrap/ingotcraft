@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public class IngotcraftModItems {
     public static final Item RAW_STEEL = RegistryObject("raw_steel", new BaseItem());
@@ -80,6 +80,6 @@ public class IngotcraftModItems {
     }
 
     public static Item block(String name, Block block) {
-        return Registry.register(Registry.ITEM, new ResourceLocation(MODID, name), new BlockItem(block, new Item.Properties().tab(TAB_INGOT_CRAFT)));
+        return Registry.register(Registry.ITEM, new ResourceLocation(MODID, name), new BlockItem(block, new Item.Properties().tab(TAB_INGOTCRAFT)));
     }
 }
