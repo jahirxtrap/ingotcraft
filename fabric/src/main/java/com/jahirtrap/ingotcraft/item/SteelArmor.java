@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public abstract class SteelArmor extends ArmorItem {
     public SteelArmor(EquipmentSlot slot) {
@@ -54,7 +54,7 @@ public abstract class SteelArmor extends ArmorItem {
             public float getKnockbackResistance() {
                 return 0f;
             }
-        }, slot, new Item.Properties().tab(TAB_INGOT_CRAFT));
+        }, slot, new Item.Properties().tab(TAB_INGOTCRAFT));
     }
 
     public static class Helmet extends SteelArmor {

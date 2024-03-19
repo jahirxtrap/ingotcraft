@@ -4,7 +4,7 @@ import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOT_CRAFT;
+import static com.jahirtrap.ingotcraft.IngotcraftModTab.TAB_INGOTCRAFT;
 
 public class BaseAxeItem extends AxeItem {
     public BaseAxeItem(int uses, float speed, float damage, int level, int enchantment, Ingredient repair, Properties properties) {
@@ -32,6 +32,6 @@ public class BaseAxeItem extends AxeItem {
             public Ingredient getRepairIngredient() {
                 return repair;
             }
-        }, 1, -3.1f, properties.tab(TAB_INGOT_CRAFT));
+        }, 1, -3.1f, properties.tab(TAB_INGOTCRAFT));
     }
 }
