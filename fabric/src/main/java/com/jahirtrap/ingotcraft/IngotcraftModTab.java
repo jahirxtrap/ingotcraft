@@ -11,7 +11,7 @@ import net.minecraft.world.item.ItemStack;
 public class IngotcraftModTab {
 
     public static void init() {
-        CreativeModeTab TAB_INGOTCRAFT = FabricItemGroup.builder(new ResourceLocation(IngotcraftMod.MODID, "tabingot_craft"))
+        CreativeModeTab TAB_INGOTCRAFT = FabricItemGroup.builder(new ResourceLocation(IngotcraftMod.MODID, "tab_ingotcraft"))
                 .icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER))
                 .displayItems((features, event) -> {
                     event.accept(IngotcraftModItems.RAW_STEEL);
@@ -75,7 +75,7 @@ public class IngotcraftModTab {
                     event.accept(IngotcraftModItems.STEEL_HAMMER);
                     event.accept(IngotcraftModItems.BRONZE_HAMMER);
                 })
-                .title(Component.translatable("itemGroup.tabingot_craft"))
+                .title(Component.translatable("itemGroup.ingotcraft.tab_ingotcraft"))
                 .build();
     }
 

@@ -6,12 +6,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.CreativeModeTabEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 public class IngotcraftModTab {
 
     public static void register(CreativeModeTabEvent.Register register) {
-        CreativeModeTab TAB_INGOTCRAFT = register.registerCreativeModeTab(new ResourceLocation(IngotcraftMod.MODID, "tabingot_craft"), builder -> builder.icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get()))
+        CreativeModeTab TAB_INGOTCRAFT = register.registerCreativeModeTab(new ResourceLocation(IngotcraftMod.MODID, "tab_ingotcraft"), builder -> builder.icon(() -> new ItemStack(IngotcraftModItems.NETHERITE_HAMMER.get()))
                 .displayItems((features, event) -> {
                     event.accept(IngotcraftModItems.RAW_STEEL.get());
                     event.accept(IngotcraftModItems.RAW_BRONZE.get());
@@ -74,11 +74,11 @@ public class IngotcraftModTab {
                     event.accept(IngotcraftModItems.STEEL_HAMMER.get());
                     event.accept(IngotcraftModItems.BRONZE_HAMMER.get());
                 })
-                .title(Component.translatable("itemGroup.tabingot_craft"))
+                .title(Component.translatable("itemGroup.ingotcraft.tab_ingotcraft"))
                 .build());
     }
 
-    public static void init() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(IngotcraftModTab::register);
+    public static void init(IEventBus bus) {
+        bus.addListener(IngotcraftModTab::register);
     }
 }

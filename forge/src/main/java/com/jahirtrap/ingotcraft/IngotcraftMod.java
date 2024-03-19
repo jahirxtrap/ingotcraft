@@ -16,6 +16,6 @@ public class IngotcraftMod {
 
         IngotcraftModBlocks.REGISTRY.register(bus);
         IngotcraftModItems.REGISTRY.register(bus);
-        IngotcraftModTab.init();
+        IngotcraftModTab.init(bus);
     }
 }
