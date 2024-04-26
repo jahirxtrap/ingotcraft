@@ -6,8 +6,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
 public class BaseBlock extends Block {
-    public BaseBlock(MapColor mapColor, SoundType soundType, float hardness, float resistance) {
-        super(BlockBehaviour.Properties.of().mapColor(mapColor).sound(soundType).strength(hardness, resistance).requiresCorrectToolForDrops()
+    public BaseBlock(MapColor mapColor, SoundType soundType) {
+        super(BlockBehaviour.Properties.of().mapColor(mapColor).sound(soundType).strength(5f, 6f).requiresCorrectToolForDrops()
                 .lightLevel($ -> 0));
     }
 }
