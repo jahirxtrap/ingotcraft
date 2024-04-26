@@ -15,12 +15,12 @@
     }
   },
   "result": {
-    "item": "ingotcraft:reinforced_invisible_leggings",
+    "id": "ingotcraft:reinforced_invisible_leggings",
     "count": 1
   },
   "conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "securitycraft"
     }
   ]

@@ -6,17 +6,17 @@
   ],
   "key": {
     "R": {
-      "tag": "c:redstone_dusts"
+      "tag": "c:dusts/redstone"
     },
     "H": {
       "tag": "ingotcraft:hammers"
     },
     "A": {
-      "tag": "c:raw_iron_ores"
+      "tag": "c:raw_materials/iron"
     }
   },
   "result": {
-    "item": "ingotcraft:raw_tin",
+    "id": "ingotcraft:raw_tin",
     "count": 1
   }
 }

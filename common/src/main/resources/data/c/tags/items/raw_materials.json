@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:raw_materials/bronze",
+    "#c:raw_materials/lead",
+    "#c:raw_materials/silver",
+    "#c:raw_materials/steel",
+    "#c:raw_materials/tin"
+  ]
+}

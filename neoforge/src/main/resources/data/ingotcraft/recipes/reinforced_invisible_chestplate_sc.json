@@ -15,12 +15,12 @@
     }
   },
   "result": {
-    "item": "ingotcraft:reinforced_invisible_chestplate",
+    "id": "ingotcraft:reinforced_invisible_chestplate",
     "count": 1
   },
   "conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "securitycraft"
     }
   ]

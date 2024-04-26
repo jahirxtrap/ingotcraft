@@ -7,14 +7,14 @@
   ],
   "key": {
     "I": {
-      "tag": "c:bronze_ingots"
+      "tag": "c:ingots/bronze"
     },
     "R": {
-      "tag": "c:wooden_rods"
+      "tag": "c:rods/wooden"
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_shovel",
+    "id": "ingotcraft:bronze_shovel",
     "count": 1
   }
 }

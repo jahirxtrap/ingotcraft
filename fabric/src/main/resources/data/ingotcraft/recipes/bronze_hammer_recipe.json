@@ -7,17 +7,17 @@
   ],
   "key": {
     "I": {
-      "tag": "c:bronze_ingots"
+      "tag": "c:ingots/bronze"
     },
     "R": {
-      "tag": "c:wooden_rods"
+      "tag": "c:rods/wooden"
     },
     "S": {
-      "tag": "c:bronze_blocks"
+      "tag": "c:storage_blocks/bronze"
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_hammer",
+    "id": "ingotcraft:bronze_hammer",
     "count": 1
   }
 }

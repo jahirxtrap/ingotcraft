@@ -7,17 +7,17 @@
   ],
   "key": {
     "I": {
-      "tag": "c:steel_ingots"
+      "tag": "c:ingots/steel"
     },
     "R": {
-      "tag": "c:wooden_rods"
+      "tag": "c:rods/wooden"
     },
     "S": {
-      "tag": "c:steel_blocks"
+      "tag": "c:storage_blocks/steel"
     }
   },
   "result": {
-    "item": "ingotcraft:steel_hammer",
+    "id": "ingotcraft:steel_hammer",
     "count": 1
   }
 }

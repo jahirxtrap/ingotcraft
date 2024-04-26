@@ -10,14 +10,14 @@
       "tag": "minecraft:stone_tool_materials"
     },
     "R": {
-      "tag": "c:wooden_rods"
+      "tag": "c:rods/wooden"
     },
     "S": {
       "tag": "c:stones"
     }
   },
   "result": {
-    "item": "ingotcraft:stone_hammer",
+    "id": "ingotcraft:stone_hammer",
     "count": 1
   }
 }

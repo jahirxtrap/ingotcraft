@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "tag": "c:steel_ingots"
+      "tag": "c:ingots/steel"
     }
   },
   "result": {
-    "item": "ingotcraft:steel_boots",
+    "id": "ingotcraft:steel_boots",
     "count": 1
   }
 }

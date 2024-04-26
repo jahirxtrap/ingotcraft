@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    },
+    {
+      "item": "ingotcraft:raw_tin"
+    }
+  ],
+  "result": {
+    "id": "ingotcraft:raw_tin_block",
+    "count": 1
+  }
+}

@@ -7,17 +7,17 @@
   ],
   "key": {
     "G": {
-      "tag": "forge:gems/diamond"
+      "tag": "c:gems/diamond"
     },
     "R": {
-      "tag": "forge:rods/wooden"
+      "tag": "c:rods/wooden"
     },
     "S": {
-      "tag": "forge:storage_blocks/diamond"
+      "tag": "c:storage_blocks/diamond"
     }
   },
   "result": {
-    "item": "ingotcraft:diamond_hammer",
+    "id": "ingotcraft:diamond_hammer",
     "count": 1
   }
 }

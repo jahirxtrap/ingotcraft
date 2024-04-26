@@ -6,17 +6,17 @@
   ],
   "key": {
     "A": {
-      "tag": "c:raw_tin_ores"
+      "tag": "c:raw_materials/tin"
     },
     "H": {
       "tag": "ingotcraft:hammers"
     },
     "R": {
-      "tag": "c:raw_copper_ores"
+      "tag": "c:raw_materials/copper"
     }
   },
   "result": {
-    "item": "ingotcraft:raw_bronze",
+    "id": "ingotcraft:raw_bronze",
     "count": 2
   }
 }

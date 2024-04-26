@@ -7,17 +7,17 @@
   ],
   "key": {
     "I": {
-      "tag": "c:gold_ingots"
+      "tag": "c:ingots/gold"
     },
     "R": {
-      "tag": "c:wooden_rods"
+      "tag": "c:rods/wooden"
     },
     "S": {
-      "tag": "c:gold_blocks"
+      "tag": "c:storage_blocks/gold"
     }
   },
   "result": {
-    "item": "ingotcraft:golden_hammer",
+    "id": "ingotcraft:golden_hammer",
     "count": 1
   }
 }

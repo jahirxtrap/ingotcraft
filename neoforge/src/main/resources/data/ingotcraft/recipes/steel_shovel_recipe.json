@@ -7,14 +7,14 @@
   ],
   "key": {
     "I": {
-      "tag": "forge:ingots/steel"
+      "tag": "c:ingots/steel"
     },
     "R": {
-      "tag": "forge:rods/wooden"
+      "tag": "c:rods/wooden"
     }
   },
   "result": {
-    "item": "ingotcraft:steel_shovel",
+    "id": "ingotcraft:steel_shovel",
     "count": 1
   }
 }

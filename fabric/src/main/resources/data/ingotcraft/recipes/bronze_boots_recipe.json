@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "tag": "c:bronze_ingots"
+      "tag": "c:ingots/bronze"
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_boots",
+    "id": "ingotcraft:bronze_boots",
     "count": 1
   }
 }

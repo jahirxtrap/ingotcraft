@@ -1,14 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#c:iron_ingots",
-    "#c:gold_ingots",
-    "#c:netherite_ingots",
-    "#c:copper_ingots",
-    "#c:steel_ingots",
-    "#c:bronze_ingots",
-    "#c:lead_ingots",
-    "#c:silver_ingots",
-    "#c:tin_ingots"
+    "#c:ingots/bronze",
+    "#c:ingots/lead",
+    "#c:ingots/silver",
+    "#c:ingots/steel",
+    "#c:ingots/tin"
   ]
 }

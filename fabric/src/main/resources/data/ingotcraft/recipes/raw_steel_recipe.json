@@ -12,11 +12,11 @@
       "tag": "ingotcraft:hammers"
     },
     "R": {
-      "tag": "c:raw_iron_ores"
+      "tag": "c:raw_materials/iron"
     }
   },
   "result": {
-    "item": "ingotcraft:raw_steel",
+    "id": "ingotcraft:raw_steel",
     "count": 1
   }
 }

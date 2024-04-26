@@ -6,17 +6,17 @@
   ],
   "key": {
     "L": {
-      "tag": "forge:gems/lapis"
+      "tag": "c:gems/lapis"
     },
     "H": {
       "tag": "ingotcraft:hammers"
     },
     "R": {
-      "tag": "forge:raw_materials/gold"
+      "tag": "c:raw_materials/gold"
     }
   },
   "result": {
-    "item": "ingotcraft:raw_lead",
+    "id": "ingotcraft:raw_lead",
     "count": 1
   }
 }

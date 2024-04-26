@@ -8,21 +8,21 @@
   ],
   "key": {
     "G": {
-      "tag": "forge:glass/colorless"
+      "tag": "c:glass_blocks/colorless"
     },
     "D": {
       "item": "minecraft:diamond_chestplate"
     }
   },
   "result": {
-    "item": "ingotcraft:reinforced_invisible_chestplate",
+    "id": "ingotcraft:reinforced_invisible_chestplate",
     "count": 1
   },
   "conditions": [
     {
-      "type": "forge:not",
+      "type": "neoforge:not",
       "value": {
-        "type": "forge:mod_loaded",
+        "type": "neoforge:mod_loaded",
         "modid": "securitycraft"
       }
     }

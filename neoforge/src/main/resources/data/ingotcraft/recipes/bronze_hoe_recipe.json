@@ -7,14 +7,14 @@
   ],
   "key": {
     "I": {
-      "tag": "forge:ingots/bronze"
+      "tag": "c:ingots/bronze"
     },
     "R": {
-      "tag": "forge:rods/wooden"
+      "tag": "c:rods/wooden"
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_hoe",
+    "id": "ingotcraft:bronze_hoe",
     "count": 1
   }
 }

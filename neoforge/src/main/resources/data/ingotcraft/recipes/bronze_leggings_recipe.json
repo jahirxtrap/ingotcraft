@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "tag": "forge:ingots/bronze"
+      "tag": "c:ingots/bronze"
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_leggings",
+    "id": "ingotcraft:bronze_leggings",
     "count": 1
   }
 }
