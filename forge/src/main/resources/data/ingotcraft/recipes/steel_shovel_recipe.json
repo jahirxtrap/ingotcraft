@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:steel_shovel",
+    "id": "ingotcraft:steel_shovel",
     "count": 1
   }
 }

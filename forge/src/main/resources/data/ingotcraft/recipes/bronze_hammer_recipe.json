@@ -17,7 +17,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_hammer",
+    "id": "ingotcraft:bronze_hammer",
     "count": 1
   }
 }

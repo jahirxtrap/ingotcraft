@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_pickaxe",
+    "id": "ingotcraft:bronze_pickaxe",
     "count": 1
   }
 }

@@ -11,7 +11,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_chestplate",
+    "id": "ingotcraft:bronze_chestplate",
     "count": 1
   }
 }

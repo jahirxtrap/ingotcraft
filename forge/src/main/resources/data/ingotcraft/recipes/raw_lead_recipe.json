@@ -16,7 +16,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:raw_lead",
+    "id": "ingotcraft:raw_lead",
     "count": 1
   }
 }

@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_shovel",
+    "id": "ingotcraft:bronze_shovel",
     "count": 1
   }
 }

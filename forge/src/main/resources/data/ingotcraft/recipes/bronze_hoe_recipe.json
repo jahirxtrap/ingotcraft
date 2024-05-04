@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_hoe",
+    "id": "ingotcraft:bronze_hoe",
     "count": 1
   }
 }

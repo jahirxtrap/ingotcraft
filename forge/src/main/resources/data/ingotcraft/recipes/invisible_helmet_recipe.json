@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:invisible_helmet",
+    "id": "ingotcraft:invisible_helmet",
     "count": 1
   }
 }

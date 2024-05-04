@@ -17,7 +17,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:iron_hammer",
+    "id": "ingotcraft:iron_hammer",
     "count": 1
   }
 }

@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:invisible_boots",
+    "id": "ingotcraft:invisible_boots",
     "count": 1
   }
 }

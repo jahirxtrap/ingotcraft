@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:bronze_sword",
+    "id": "ingotcraft:bronze_sword",
     "count": 1
   }
 }

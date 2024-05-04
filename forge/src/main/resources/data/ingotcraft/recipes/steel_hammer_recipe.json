@@ -17,7 +17,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:steel_hammer",
+    "id": "ingotcraft:steel_hammer",
     "count": 1
   }
 }

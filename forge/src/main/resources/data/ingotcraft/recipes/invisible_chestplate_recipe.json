@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:invisible_chestplate",
+    "id": "ingotcraft:invisible_chestplate",
     "count": 1
   }
 }

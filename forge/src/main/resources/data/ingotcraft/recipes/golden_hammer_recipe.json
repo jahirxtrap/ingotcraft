@@ -17,7 +17,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:golden_hammer",
+    "id": "ingotcraft:golden_hammer",
     "count": 1
   }
 }

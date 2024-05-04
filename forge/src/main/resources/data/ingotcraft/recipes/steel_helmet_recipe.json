@@ -10,7 +10,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:steel_helmet",
+    "id": "ingotcraft:steel_helmet",
     "count": 1
   }
 }

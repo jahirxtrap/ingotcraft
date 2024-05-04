@@ -16,7 +16,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:raw_steel",
+    "id": "ingotcraft:raw_steel",
     "count": 1
   }
 }

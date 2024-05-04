@@ -12,7 +12,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:raw_silver",
+    "id": "ingotcraft:raw_silver",
     "count": 1
   }
 }

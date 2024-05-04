@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:reinforced_invisible_boots",
+    "id": "ingotcraft:reinforced_invisible_boots",
     "count": 1
   },
   "conditions": [

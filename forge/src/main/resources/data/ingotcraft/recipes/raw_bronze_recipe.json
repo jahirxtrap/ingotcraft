@@ -16,7 +16,7 @@
     }
   },
   "result": {
-    "item": "ingotcraft:raw_bronze",
+    "id": "ingotcraft:raw_bronze",
     "count": 2
   }
 }
