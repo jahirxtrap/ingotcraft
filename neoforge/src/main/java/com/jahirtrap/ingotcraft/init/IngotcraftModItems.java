@@ -1,9 +1,6 @@
 package com.jahirtrap.ingotcraft.init;
 
 import com.jahirtrap.ingotcraft.item.*;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem.Type;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
