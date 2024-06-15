@@ -66,6 +66,6 @@ public class IngotcraftModItems {
     }
 
     public static Item RegistryObject(String name, Item item) {
-        return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MODID, name), item);
+        return Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name), item);
     }
 }

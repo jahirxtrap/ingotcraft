@@ -80,7 +80,7 @@ public class IngotcraftModTab {
             .build();
 
     public static void init() {
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation(IngotcraftMod.MODID, "tab_ingotcraft"), TAB_INGOTCRAFT);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(IngotcraftMod.MODID, "tab_ingotcraft"), TAB_INGOTCRAFT);
     }
 
 }

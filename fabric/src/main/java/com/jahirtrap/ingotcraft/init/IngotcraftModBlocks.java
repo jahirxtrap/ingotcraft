@@ -29,7 +29,7 @@ public class IngotcraftModBlocks {
     }
 
     public static Block RegistryObject(String name, Block block) {
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MODID, name), new BlockItem(block, new Item.Properties()));
-        return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MODID, name), block);
+        Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(MODID, name), new BlockItem(block, new Item.Properties()));
+        return Registry.register(BuiltInRegistries.BLOCK, ResourceLocation.fromNamespaceAndPath(MODID, name), block);
     }
 }
