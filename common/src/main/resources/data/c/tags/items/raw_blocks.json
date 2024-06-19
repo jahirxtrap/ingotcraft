@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#c:raw_blocks/raw_bronze",
-    "#c:raw_blocks/raw_lead",
-    "#c:raw_blocks/raw_silver",
-    "#c:raw_blocks/raw_steel",
-    "#c:raw_blocks/raw_tin"
+    "#c:raw_blocks/bronze",
+    "#c:raw_blocks/lead",
+    "#c:raw_blocks/silver",
+    "#c:raw_blocks/steel",
+    "#c:raw_blocks/tin"
   ]
 }
