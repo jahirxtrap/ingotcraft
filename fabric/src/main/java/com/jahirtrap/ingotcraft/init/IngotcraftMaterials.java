@@ -14,11 +14,7 @@ public enum IngotcraftMaterials implements ArmorMaterial {
     STEEL("ingotcraft:steel", 25, createMap(new int[]{2, 5, 6, 2}),
             9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(IngotcraftModItems.STEEL_INGOT)),
     BRONZE("ingotcraft:bronze", 15, createMap(new int[]{2, 5, 6, 2}),
-            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT)),
-    INVISIBLE("ingotcraft:invisible", 15, createMap(new int[]{2, 5, 6, 2}),
-            9, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Blocks.GLASS)),
-    REINFORCED_INVISIBLE("ingotcraft:invisible", 30, createMap(new int[]{3, 6, 8, 3}),
-            10, SoundEvents.ARMOR_EQUIP_GENERIC, 2f, 0f, () -> Ingredient.EMPTY);
+            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT));
 
     private static EnumMap<EquipmentSlot, Integer> createMap(int[] values) {
         EnumMap<EquipmentSlot, Integer> enumMap = new EnumMap<>(EquipmentSlot.class);
