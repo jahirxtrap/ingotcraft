@@ -16,17 +16,13 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class IngotcraftMaterials {
-    public static final Holder<ArmorMaterial> STEEL, BRONZE, INVISIBLE, REINFORCED_INVISIBLE;
+    public static final Holder<ArmorMaterial> STEEL, BRONZE;
 
     static {
         STEEL = register("ingotcraft:steel", createMap(new int[]{2, 5, 6, 2, 5}),
                 9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(IngotcraftModItems.STEEL_INGOT));
         BRONZE = register("ingotcraft:bronze", createMap(new int[]{2, 5, 6, 2, 5}),
                 16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT));
-        INVISIBLE = register("ingotcraft:invisible", createMap(new int[]{2, 5, 6, 2, 5}),
-                9, SoundEvents.ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.of(Blocks.GLASS));
-        REINFORCED_INVISIBLE = register("ingotcraft:invisible", createMap(new int[]{3, 6, 8, 3, 11}),
-                10, SoundEvents.ARMOR_EQUIP_GENERIC, 2f, 0f, () -> Ingredient.EMPTY);
     }
 
     private static EnumMap<Type, Integer> createMap(int[] values) {

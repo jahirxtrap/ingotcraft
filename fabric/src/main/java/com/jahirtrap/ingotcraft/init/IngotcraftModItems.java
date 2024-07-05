@@ -45,14 +45,6 @@ public class IngotcraftModItems {
     public static final Item BRONZE_CHESTPLATE = RegistryObject("bronze_chestplate", new BaseArmorItem(IngotcraftMaterials.BRONZE, Type.CHESTPLATE, 15, new Item.Properties()));
     public static final Item BRONZE_LEGGINGS = RegistryObject("bronze_leggings", new BaseArmorItem(IngotcraftMaterials.BRONZE, Type.LEGGINGS, 15, new Item.Properties()));
     public static final Item BRONZE_BOOTS = RegistryObject("bronze_boots", new BaseArmorItem(IngotcraftMaterials.BRONZE, Type.BOOTS, 15, new Item.Properties()));
-    public static final Item INVISIBLE_HELMET = RegistryObject("invisible_helmet", new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.HELMET, 15, new Item.Properties()));
-    public static final Item INVISIBLE_CHESTPLATE = RegistryObject("invisible_chestplate", new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.CHESTPLATE, 15, new Item.Properties()));
-    public static final Item INVISIBLE_LEGGINGS = RegistryObject("invisible_leggings", new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.LEGGINGS, 15, new Item.Properties()));
-    public static final Item INVISIBLE_BOOTS = RegistryObject("invisible_boots", new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.BOOTS, 15, new Item.Properties()));
-    public static final Item REINFORCED_INVISIBLE_HELMET = RegistryObject("reinforced_invisible_helmet", new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.HELMET, 30, new Item.Properties().rarity(Rarity.RARE)));
-    public static final Item REINFORCED_INVISIBLE_CHESTPLATE = RegistryObject("reinforced_invisible_chestplate", new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.CHESTPLATE, 30, new Item.Properties().rarity(Rarity.RARE)));
-    public static final Item REINFORCED_INVISIBLE_LEGGINGS = RegistryObject("reinforced_invisible_leggings", new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.LEGGINGS, 30, new Item.Properties().rarity(Rarity.RARE)));
-    public static final Item REINFORCED_INVISIBLE_BOOTS = RegistryObject("reinforced_invisible_boots", new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.BOOTS, 30, new Item.Properties().rarity(Rarity.RARE)));
     public static final Item STONE_HAMMER = RegistryObject("stone_hammer", new BaseHammerItem(IngotcraftTiers.STONE_HAMMER, new Item.Properties()));
     public static final Item IRON_HAMMER = RegistryObject("iron_hammer", new BaseHammerItem(IngotcraftTiers.IRON_HAMMER, new Item.Properties()));
     public static final Item GOLDEN_HAMMER = RegistryObject("golden_hammer", new BaseHammerItem(IngotcraftTiers.GOLD_HAMMER, new Item.Properties()));
