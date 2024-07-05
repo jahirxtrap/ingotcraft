@@ -8,15 +8,15 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum IngotcraftTiers implements Tier {
-    STEEL(2, 501, 6.5f, 2f, 14, () -> Ingredient.of(IngotcraftModItems.STEEL_INGOT.get())),
-    BRONZE(2, 350, 7f, 2f, 16, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT.get())),
+    STEEL(2, 501, 6.5f, 2f, 14, () -> Ingredient.of(IngotcraftModItems.STEEL_INGOT)),
+    BRONZE(2, 350, 7f, 2f, 16, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT)),
     STONE_HAMMER(1, 131, 5f, 1f, 5, () -> Ingredient.of(ItemTags.STONE_TOOL_MATERIALS)),
     IRON_HAMMER(2, 250, 7f, 2f, 14, () -> Ingredient.of(Items.IRON_INGOT)),
     DIAMOND_HAMMER(3, 1561, 9f, 3f, 10, () -> Ingredient.of(Items.DIAMOND)),
     GOLD_HAMMER(1, 160, 13f, 0f, 22, () -> Ingredient.of(Items.GOLD_INGOT)),
     NETHERITE_HAMMER(4, 2031, 10f, 4f, 15, () -> Ingredient.of(Items.NETHERITE_INGOT)),
-    STEEL_HAMMER(2, 501, 7.5f, 2f, 14, () -> Ingredient.of(IngotcraftModItems.STEEL_INGOT.get())),
-    BRONZE_HAMMER(2, 350, 8f, 2f, 16, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT.get())),
+    STEEL_HAMMER(2, 501, 7.5f, 2f, 14, () -> Ingredient.of(IngotcraftModItems.STEEL_INGOT)),
+    BRONZE_HAMMER(2, 350, 8f, 2f, 16, () -> Ingredient.of(IngotcraftModItems.BRONZE_INGOT)),
     ENDERITE_HAMMER(4, 4096, 16f, 5f, 17, () -> Ingredient.EMPTY);
 
     private final int level;

@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "ingotcraft:bronze_boots",
-    "ingotcraft:invisible_boots",
-    "ingotcraft:reinforced_invisible_boots",
     "ingotcraft:steel_boots"
   ]
 }
