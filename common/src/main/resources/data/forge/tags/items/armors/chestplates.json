@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "ingotcraft:bronze_chestplate",
-    "ingotcraft:invisible_chestplate",
-    "ingotcraft:reinforced_invisible_chestplate",
     "ingotcraft:steel_chestplate"
   ]
 }
