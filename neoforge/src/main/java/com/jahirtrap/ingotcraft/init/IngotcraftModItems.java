@@ -58,14 +58,6 @@ public class IngotcraftModItems {
     public static final DeferredItem<Item> BRONZE_CHESTPLATE = REGISTRY.register("bronze_chestplate", () -> new BaseArmorItem(IngotcraftMaterials.BRONZE, Type.CHESTPLATE, 15, new Item.Properties()));
     public static final DeferredItem<Item> BRONZE_LEGGINGS = REGISTRY.register("bronze_leggings", () -> new BaseArmorItem(IngotcraftMaterials.BRONZE, Type.LEGGINGS, 15, new Item.Properties()));
     public static final DeferredItem<Item> BRONZE_BOOTS = REGISTRY.register("bronze_boots", () -> new BaseArmorItem(IngotcraftMaterials.BRONZE, Type.BOOTS, 15, new Item.Properties()));
-    public static final DeferredItem<Item> INVISIBLE_HELMET = REGISTRY.register("invisible_helmet", () -> new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.HELMET, 15, new Item.Properties()));
-    public static final DeferredItem<Item> INVISIBLE_CHESTPLATE = REGISTRY.register("invisible_chestplate", () -> new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.CHESTPLATE, 15, new Item.Properties()));
-    public static final DeferredItem<Item> INVISIBLE_LEGGINGS = REGISTRY.register("invisible_leggings", () -> new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.LEGGINGS, 15, new Item.Properties()));
-    public static final DeferredItem<Item> INVISIBLE_BOOTS = REGISTRY.register("invisible_boots", () -> new BaseArmorItem(IngotcraftMaterials.INVISIBLE, Type.BOOTS, 15, new Item.Properties()));
-    public static final DeferredItem<Item> REINFORCED_INVISIBLE_HELMET = REGISTRY.register("reinforced_invisible_helmet", () -> new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.HELMET, 30, new Item.Properties().rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> REINFORCED_INVISIBLE_CHESTPLATE = REGISTRY.register("reinforced_invisible_chestplate", () -> new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.CHESTPLATE, 30, new Item.Properties().rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> REINFORCED_INVISIBLE_LEGGINGS = REGISTRY.register("reinforced_invisible_leggings", () -> new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.LEGGINGS, 30, new Item.Properties().rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> REINFORCED_INVISIBLE_BOOTS = REGISTRY.register("reinforced_invisible_boots", () -> new BaseArmorItem(IngotcraftMaterials.REINFORCED_INVISIBLE, Type.BOOTS, 30, new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> STONE_HAMMER = REGISTRY.register("stone_hammer", () -> new BaseHammerItem(IngotcraftTiers.STONE_HAMMER, new Item.Properties()));
     public static final DeferredItem<Item> IRON_HAMMER = REGISTRY.register("iron_hammer", () -> new BaseHammerItem(IngotcraftTiers.IRON_HAMMER, new Item.Properties()));
     public static final DeferredItem<Item> GOLDEN_HAMMER = REGISTRY.register("golden_hammer", () -> new BaseHammerItem(IngotcraftTiers.GOLD_HAMMER, new Item.Properties()));
