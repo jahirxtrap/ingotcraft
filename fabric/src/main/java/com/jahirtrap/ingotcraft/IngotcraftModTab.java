@@ -58,14 +58,6 @@ public class IngotcraftModTab {
                     event.accept(IngotcraftModItems.BRONZE_CHESTPLATE);
                     event.accept(IngotcraftModItems.BRONZE_LEGGINGS);
                     event.accept(IngotcraftModItems.BRONZE_BOOTS);
-                    event.accept(IngotcraftModItems.INVISIBLE_HELMET);
-                    event.accept(IngotcraftModItems.INVISIBLE_CHESTPLATE);
-                    event.accept(IngotcraftModItems.INVISIBLE_LEGGINGS);
-                    event.accept(IngotcraftModItems.INVISIBLE_BOOTS);
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_HELMET);
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_CHESTPLATE);
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_LEGGINGS);
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_BOOTS);
                     event.accept(IngotcraftModItems.STONE_HAMMER);
                     event.accept(IngotcraftModItems.IRON_HAMMER);
                     event.accept(IngotcraftModItems.GOLDEN_HAMMER);

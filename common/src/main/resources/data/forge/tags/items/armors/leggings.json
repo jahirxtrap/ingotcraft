@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "ingotcraft:bronze_leggings",
-    "ingotcraft:invisible_leggings",
-    "ingotcraft:reinforced_invisible_leggings",
     "ingotcraft:steel_leggings"
   ]
 }

@@ -57,14 +57,6 @@ public class IngotcraftModTab {
                     event.accept(IngotcraftModItems.BRONZE_CHESTPLATE.get());
                     event.accept(IngotcraftModItems.BRONZE_LEGGINGS.get());
                     event.accept(IngotcraftModItems.BRONZE_BOOTS.get());
-                    event.accept(IngotcraftModItems.INVISIBLE_HELMET.get());
-                    event.accept(IngotcraftModItems.INVISIBLE_CHESTPLATE.get());
-                    event.accept(IngotcraftModItems.INVISIBLE_LEGGINGS.get());
-                    event.accept(IngotcraftModItems.INVISIBLE_BOOTS.get());
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_HELMET.get());
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_CHESTPLATE.get());
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_LEGGINGS.get());
-                    event.accept(IngotcraftModItems.REINFORCED_INVISIBLE_BOOTS.get());
                     event.accept(IngotcraftModItems.STONE_HAMMER.get());
                     event.accept(IngotcraftModItems.IRON_HAMMER.get());
                     event.accept(IngotcraftModItems.GOLDEN_HAMMER.get());
@@ -81,4 +73,5 @@ public class IngotcraftModTab {
     public static void init(IEventBus bus) {
         bus.addListener(IngotcraftModTab::register);
     }
+
 }
