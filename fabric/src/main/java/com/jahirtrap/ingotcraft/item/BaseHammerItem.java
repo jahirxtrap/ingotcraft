@@ -6,6 +6,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
 
+import static com.jahirtrap.ingotcraft.util.CommonUtils.hurt;
+
 public class BaseHammerItem extends PickaxeItem implements RepairableItem, FabricItem {
     public BaseHammerItem(Tier tier, Properties properties) {
         super(tier, 7, -3f, properties);
@@ -18,13 +20,7 @@ public class BaseHammerItem extends PickaxeItem implements RepairableItem, Fabri
 
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
-        ItemStack retVal = stack.copy();
-        if (retVal.getTag() != null && retVal.getTag().getBoolean("Unbreakable")) return retVal;
-        retVal.setDamageValue(stack.getDamageValue() + 1);
-        if (retVal.getDamageValue() >= retVal.getMaxDamage()) {
-            return ItemStack.EMPTY;
-        }
-        return retVal;
+        return hurt(1, stack.copy());
     }
 
     @Override
