@@ -1,0 +1,4 @@
+- Internal changes
+- Rename all instances of "Hammer" to "Pick Hammer"
+- Update textures
+- New logo

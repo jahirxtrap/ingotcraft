@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ingotcraft:item/stone_pick_hammer"
+  }
+}
