@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "ingotcraft:netherite_pick_hammer"
+  },
+  "addition": {
+    "tag": "c:enderite_ingots"
+  },
+  "result": {
+    "item": "ingotcraft:enderite_pick_hammer"
+  }
+}
