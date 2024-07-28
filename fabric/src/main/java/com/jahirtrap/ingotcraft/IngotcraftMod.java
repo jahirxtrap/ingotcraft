@@ -1,7 +1,7 @@
 package com.jahirtrap.ingotcraft;
 
-import com.jahirtrap.ingotcraft.init.IngotcraftModBlocks;
-import com.jahirtrap.ingotcraft.init.IngotcraftModItems;
+import com.jahirtrap.ingotcraft.init.ModItems;
+import com.jahirtrap.ingotcraft.init.ModTab;
 import net.fabricmc.api.ModInitializer;
 
 public class IngotcraftMod implements ModInitializer {
@@ -10,8 +10,7 @@ public class IngotcraftMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        IngotcraftModBlocks.init();
-        IngotcraftModItems.init();
-        IngotcraftModTab.init();
+        ModItems.init();
+        ModTab.init();
     }
 }

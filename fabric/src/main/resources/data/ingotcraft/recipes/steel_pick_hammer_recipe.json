@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    " R ",
+    " R "
+  ],
+  "key": {
+    "I": {
+      "tag": "c:steel_ingots"
+    },
+    "R": {
+      "tag": "c:wooden_rods"
+    },
+    "S": {
+      "tag": "c:steel_blocks"
+    }
+  },
+  "result": {
+    "item": "ingotcraft:steel_pick_hammer",
+    "count": 1
+  }
+}

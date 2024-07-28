@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "ingotcraft:netherite_pick_hammer"
+  },
+  "addition": {
+    "tag": "forge:ingots/enderite"
+  },
+  "result": {
+    "item": "ingotcraft:enderite_pick_hammer"
+  },
+  "template": {
+    "item": "enderitemod:enderite_upgrade_smithing_template"
+  }
+}

@@ -11,7 +11,7 @@ Easy crafting for base metals
 - Silver (Raw, Raw Block, Ingot, Block, Nugget)
 - Tin (Raw, Raw Block, Ingot, Block, Nugget)
 - Copper (Nugget)
-- Hammer (Stone, Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze)
+- Pick Hammer (Stone, Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze)
 
 <strong>Compatible with:</strong>
 
@@ -24,6 +24,6 @@ Easy crafting for base metals
 <details>
   <summary>Spoiler</summary>
 
-<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/4bf2238047a167003df127b1c4e2f13d2e8d46a4.png" width="500">
+<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/930fd5e73ca8e9c5e0522d95341f6ec92a3e1d2c.png" width="500">
 
 </details>
