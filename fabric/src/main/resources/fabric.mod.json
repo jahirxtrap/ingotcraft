@@ -8,7 +8,8 @@
 		"${mod_author}"
 	],
 	"contact": {
-		"homepage": "${mod_url}"
+		"homepage": "${mod_url}",
+		"issues": "${mod_issues}"
 	},
 	"license": "${mod_license}",
 	"icon": "logo.png",
@@ -25,6 +26,6 @@
 		"fabricloader": "${loader_version_range}",
 		"minecraft": "${minecraft_version_range}",
 		"java": ">=17",
-		"fabric": "*"
+		"fabric-api": "*"
 	}
 }
