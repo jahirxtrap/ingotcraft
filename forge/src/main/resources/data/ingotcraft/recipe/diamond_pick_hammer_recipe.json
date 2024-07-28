@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GSG",
+    " R ",
+    " R "
+  ],
+  "key": {
+    "G": {
+      "tag": "forge:gems/diamond"
+    },
+    "R": {
+      "tag": "forge:rods/wooden"
+    },
+    "S": {
+      "tag": "forge:storage_blocks/diamond"
+    }
+  },
+  "result": {
+    "id": "ingotcraft:diamond_pick_hammer",
+    "count": 1
+  }
+}

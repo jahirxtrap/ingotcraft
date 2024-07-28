@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    " R ",
+    " R "
+  ],
+  "key": {
+    "I": {
+      "tag": "c:ingots/bronze"
+    },
+    "R": {
+      "tag": "c:rods/wooden"
+    },
+    "S": {
+      "tag": "c:storage_blocks/bronze"
+    }
+  },
+  "result": {
+    "id": "ingotcraft:bronze_pick_hammer",
+    "count": 1
+  }
+}

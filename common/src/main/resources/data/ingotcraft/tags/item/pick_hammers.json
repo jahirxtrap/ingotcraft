@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "ingotcraft:stone_pick_hammer",
+    "ingotcraft:iron_pick_hammer",
+    "ingotcraft:golden_pick_hammer",
+    "ingotcraft:diamond_pick_hammer",
+    "ingotcraft:netherite_pick_hammer",
+    "ingotcraft:enderite_pick_hammer",
+    "ingotcraft:steel_pick_hammer",
+    "ingotcraft:bronze_pick_hammer"
+  ]
+}

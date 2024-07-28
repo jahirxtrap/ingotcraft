@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST",
+    " R ",
+    " R "
+  ],
+  "key": {
+    "T": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "R": {
+      "tag": "c:rods/wooden"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
+  },
+  "result": {
+    "id": "ingotcraft:stone_pick_hammer",
+    "count": 1
+  }
+}
