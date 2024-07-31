@@ -9,7 +9,7 @@ import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
 
 public class ModTab {
     public static CreativeModeTab TAB_INGOTCRAFT = FabricItemGroupBuilder.build(
-            new ResourceLocation(MODID, "tab_ingotcraft"), () -> new ItemStack(ModItems.NETHERITE_PICK_HAMMER));
+            new ResourceLocation(MODID, "tab_ingotcraft"), () -> new ItemStack(ModContent.NETHERITE_PICK_HAMMER));
 
     public static void init() {
     }

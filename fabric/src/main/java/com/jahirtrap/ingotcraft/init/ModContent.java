@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.Material;
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
 import static com.jahirtrap.ingotcraft.init.ModTab.TAB_INGOTCRAFT;
 
-public class ModItems {
+public class ModContent {
     public static final Item RAW_STEEL = registerItem("raw_steel", new BaseItem());
     public static final Item RAW_BRONZE = registerItem("raw_bronze", new BaseItem());
     public static final Item RAW_LEAD = registerItem("raw_lead", new BaseItem());
@@ -69,8 +69,8 @@ public class ModItems {
     public static final Item BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", new BasePickHammerItem(ModTiers.BRONZE_PICK_HAMMER, new Item.Properties()));
 
     public static Block registerBlock(String name, Block block, Item.Properties properties) {
-        Registry.register(Registry.ITEM, new ResourceLocation(MODID, name), new BlockItem(block, properties.tab(TAB_INGOTCRAFT)));
-        return Registry.register(Registry.BLOCK, new ResourceLocation(MODID, name), block);
+        registerItem(name, new BlockItem(block, properties.tab(TAB_INGOTCRAFT)));
+        return registerBlock(name, block);
     }
 
     public static Block registerBlock(String name, Block block) {
