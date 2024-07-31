@@ -10,7 +10,7 @@ public class ModTab {
         TAB_INGOTCRAFT = new CreativeModeTab("ingotcraft.tab_ingotcraft") {
             @Override
             public ItemStack makeIcon() {
-                return new ItemStack(ModItems.NETHERITE_PICK_HAMMER.get());
+                return new ItemStack(ModContent.NETHERITE_PICK_HAMMER.get());
             }
         };
     }

@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
 import static com.jahirtrap.ingotcraft.init.ModTab.TAB_INGOTCRAFT;
 
-public class ModItems {
+public class ModContent {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registry.BLOCK_REGISTRY, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registry.ITEM_REGISTRY, MODID);
 
@@ -76,8 +76,8 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", () -> new BasePickHammerItem(ModTiers.BRONZE_PICK_HAMMER, new Item.Properties()));
 
     public static RegistryObject<Block> registerBlock(String name, Supplier<Block> supplier, Item.Properties properties) {
-        var block = BLOCKS.register(name, supplier);
-        ITEMS.register(name, () -> new BlockItem(block.get(), properties.tab(TAB_INGOTCRAFT)));
+        var block = registerBlock(name, supplier);
+        registerItem(name, () -> new BlockItem(block.get(), properties.tab(TAB_INGOTCRAFT)));
         return block;
     }
 
