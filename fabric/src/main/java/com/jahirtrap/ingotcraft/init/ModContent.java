@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.MapColor;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
 
-public class ModItems {
+public class ModContent {
     public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new Item.Properties()));
     public static final Item RAW_BRONZE = registerItem("raw_bronze", new Item(new Item.Properties()));
     public static final Item RAW_LEAD = registerItem("raw_lead", new Item(new Item.Properties()));
@@ -69,8 +69,8 @@ public class ModItems {
     public static final Item BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", new BasePickHammerItem(ModTiers.BRONZE_PICK_HAMMER, new Item.Properties()));
 
     public static Block registerBlock(String name, Block block, Item.Properties properties) {
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MODID, name), new BlockItem(block, properties));
-        return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MODID, name), block);
+        registerItem(name, new BlockItem(block, properties));
+        return registerBlock(name, block);
     }
 
     public static Block registerBlock(String name, Block block) {
