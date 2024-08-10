@@ -4,9 +4,17 @@
     "item": "ingotcraft:netherite_pick_hammer"
   },
   "addition": {
-    "tag": "c:enderite_ingots"
+    "item": "enderitemod:enderite_ingot"
   },
   "result": {
     "item": "ingotcraft:enderite_pick_hammer"
-  }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:any_mod_loaded",
+      "values": [
+        "enderitemod"
+      ]
+    }
+  ]
 }

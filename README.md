@@ -24,6 +24,6 @@ Easy crafting for base metals
 <details>
   <summary>Spoiler</summary>
 
-<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/930fd5e73ca8e9c5e0522d95341f6ec92a3e1d2c.png" width="500">
+<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/d0311049d245ad90781e5eb5186fa76c153c36cd.png" width="500">
 
 </details>
