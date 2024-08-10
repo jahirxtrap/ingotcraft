@@ -4,12 +4,18 @@
     "item": "ingotcraft:netherite_pick_hammer"
   },
   "addition": {
-    "tag": "c:ingots/enderite"
+    "item": "enderitemod:enderite_ingot"
   },
   "result": {
     "id": "ingotcraft:enderite_pick_hammer"
   },
   "template": {
     "item": "enderitemod:enderite_upgrade_smithing_template"
-  }
+  },
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderitemod"
+    }
+  ]
 }
