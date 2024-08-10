@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "experience": 9,
-  "cookingtime": 900,
-  "ingredient": {
-    "item": "ingotcraft:raw_silver_block"
-  },
-  "result": "ingotcraft:silver_block"
-}
