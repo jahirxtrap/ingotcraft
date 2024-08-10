@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "experience": 9,
-  "cookingtime": 900,
-  "ingredient": {
-    "item": "ingotcraft:raw_tin_block"
-  },
-  "result": "ingotcraft:tin_block"
-}
