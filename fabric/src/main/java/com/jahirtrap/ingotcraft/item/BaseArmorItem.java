@@ -8,6 +8,6 @@ import static com.jahirtrap.ingotcraft.init.ModTab.TAB_INGOTCRAFT;
 
 public class BaseArmorItem extends ArmorItem {
     public BaseArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties properties) {
-        super(material, slot, properties.tab(TAB_INGOTCRAFT));
+        super(material, slot, properties.durability(material.getDurabilityForSlot(slot)).tab(TAB_INGOTCRAFT));
     }
 }

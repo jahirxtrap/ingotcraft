@@ -1,15 +1,18 @@
 package com.jahirtrap.ingotcraft.init;
 
 import com.jahirtrap.ingotcraft.block.BaseBlock;
-import com.jahirtrap.ingotcraft.item.*;
+import com.jahirtrap.ingotcraft.item.BaseArmorItem;
+import com.jahirtrap.ingotcraft.item.BaseItem;
+import com.jahirtrap.ingotcraft.item.BasePickHammerItem;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.Material;
+
+import java.util.List;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
 import static com.jahirtrap.ingotcraft.init.ModTab.TAB_INGOTCRAFT;
@@ -41,24 +44,10 @@ public class ModContent {
     public static final Item SILVER_NUGGET = registerItem("silver_nugget", new BaseItem());
     public static final Item TIN_NUGGET = registerItem("tin_nugget", new BaseItem());
     public static final Item COPPER_NUGGET = registerItem("copper_nugget", new BaseItem());
-    public static final Item STEEL_SWORD = registerItem("steel_sword", new BaseSwordItem(ModTiers.STEEL, new Item.Properties()));
-    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new BasePickaxeItem(ModTiers.STEEL, new Item.Properties()));
-    public static final Item STEEL_AXE = registerItem("steel_axe", new BaseAxeItem(ModTiers.STEEL, new Item.Properties()));
-    public static final Item STEEL_SHOVEL = registerItem("steel_shovel", new BaseShovelItem(ModTiers.STEEL, new Item.Properties()));
-    public static final Item STEEL_HOE = registerItem("steel_hoe", new BaseHoeItem(ModTiers.STEEL, new Item.Properties()));
-    public static final Item BRONZE_SWORD = registerItem("bronze_sword", new BaseSwordItem(ModTiers.BRONZE, new Item.Properties()));
-    public static final Item BRONZE_PICKAXE = registerItem("bronze_pickaxe", new BasePickaxeItem(ModTiers.BRONZE, new Item.Properties()));
-    public static final Item BRONZE_AXE = registerItem("bronze_axe", new BaseAxeItem(ModTiers.BRONZE, new Item.Properties()));
-    public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel", new BaseShovelItem(ModTiers.BRONZE, new Item.Properties()));
-    public static final Item BRONZE_HOE = registerItem("bronze_hoe", new BaseHoeItem(ModTiers.BRONZE, new Item.Properties()));
-    public static final Item STEEL_HELMET = registerItem("steel_helmet", new BaseArmorItem(ModMaterials.STEEL, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate", new BaseArmorItem(ModMaterials.STEEL, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings", new BaseArmorItem(ModMaterials.STEEL, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final Item STEEL_BOOTS = registerItem("steel_boots", new BaseArmorItem(ModMaterials.STEEL, EquipmentSlot.FEET, new Item.Properties()));
-    public static final Item BRONZE_HELMET = registerItem("bronze_helmet", new BaseArmorItem(ModMaterials.BRONZE, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate", new BaseArmorItem(ModMaterials.BRONZE, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings", new BaseArmorItem(ModMaterials.BRONZE, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final Item BRONZE_BOOTS = registerItem("bronze_boots", new BaseArmorItem(ModMaterials.BRONZE, EquipmentSlot.FEET, new Item.Properties()));
+    public static final List<Item> STEEL_TOOLS = registerTools("steel", ModTiers.STEEL, new float[]{6f, -3f, -2f, -1f}, new Item.Properties());
+    public static final List<Item> BRONZE_TOOLS = registerTools("bronze", ModTiers.BRONZE, new float[]{6f, -3f, -2f, -1f}, new Item.Properties());
+    public static final List<Item> STEEL_ARMOR = registerArmor(ModMaterials.STEEL, new Item.Properties());
+    public static final List<Item> BRONZE_ARMOR = registerArmor(ModMaterials.BRONZE, new Item.Properties());
     public static final Item STONE_PICK_HAMMER = registerItem("stone_pick_hammer", new BasePickHammerItem(ModTiers.STONE_PICK_HAMMER, new Item.Properties()));
     public static final Item IRON_PICK_HAMMER = registerItem("iron_pick_hammer", new BasePickHammerItem(ModTiers.IRON_PICK_HAMMER, new Item.Properties()));
     public static final Item GOLDEN_PICK_HAMMER = registerItem("golden_pick_hammer", new BasePickHammerItem(ModTiers.GOLD_PICK_HAMMER, new Item.Properties()));
@@ -79,6 +68,26 @@ public class ModContent {
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new ResourceLocation(MODID, name), item);
+    }
+
+    private static List<Item> registerTools(String name, Tier tier, float[] attr, Item.Properties properties) {
+        return List.of(
+                registerItem(name + "_sword", new SwordItem(tier, 3, -2.4f, properties.tab(TAB_INGOTCRAFT))),
+                registerItem(name + "_pickaxe", new PickaxeItem(tier, 1, -2.8f, properties.tab(TAB_INGOTCRAFT))),
+                registerItem(name + "_axe", new AxeItem(tier, attr[0], attr[1], properties.tab(TAB_INGOTCRAFT))),
+                registerItem(name + "_shovel", new ShovelItem(tier, 1.5f, -3f, properties.tab(TAB_INGOTCRAFT))),
+                registerItem(name + "_hoe", new HoeItem(tier, (int) attr[2], attr[3], properties.tab(TAB_INGOTCRAFT)))
+        );
+    }
+
+    private static List<Item> registerArmor(ArmorMaterial material, Item.Properties properties) {
+        String name = material.getName().substring(material.getName().indexOf(ResourceLocation.NAMESPACE_SEPARATOR) + 1);
+        return List.of(
+                registerItem(name + "_helmet", new BaseArmorItem(material, EquipmentSlot.HEAD, properties)),
+                registerItem(name + "_chestplate", new BaseArmorItem(material, EquipmentSlot.CHEST, properties)),
+                registerItem(name + "_leggings", new BaseArmorItem(material, EquipmentSlot.LEGS, properties)),
+                registerItem(name + "_boots", new BaseArmorItem(material, EquipmentSlot.FEET, properties))
+        );
     }
 
     public static void init() {
