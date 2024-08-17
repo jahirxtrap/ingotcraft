@@ -5,6 +5,7 @@
     "#c:ingots/lead",
     "#c:ingots/silver",
     "#c:ingots/steel",
-    "#c:ingots/tin"
+    "#c:ingots/tin",
+    { "id": "#c:ingots/enderite", "required": false }
   ]
 }
