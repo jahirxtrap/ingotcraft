@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#ingotcraft:pick_hammers",
     "ingotcraft:bronze_pickaxe",
-    "ingotcraft:steel_pickaxe"
+    "ingotcraft:steel_pickaxe",
+    "#ingotcraft:pick_hammers"
   ]
 }

@@ -6,6 +6,9 @@
     "RecipeMixin",
     "RepairItemRecipeMixin"
   ],
+  "client": [
+    "HumanoidArmorLayerMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
