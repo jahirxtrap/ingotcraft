@@ -7,10 +7,7 @@ plugins {
 }
 
 version = "${version}-forge"
-
-base {
-    archivesName = mod_id
-}
+base.archivesName = mod_id
 
 mixin {
     add(sourceSets.main, "${mod_id}.refmap.json")
@@ -83,7 +80,7 @@ tasks.withType(JavaCompile).configureEach {
     source(project(":common").sourceSets.main.allSource)
 }
 
-def resourceTargets = ['META-INF/mods.toml', 'META-INF/jarjar/metadata.json', 'pack.mcmeta']
+def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
 def replaceProperties = [
         minecraft_version: minecraft_version, minecraft_version_range: forge_minecraft_version_range,
         forge_version: forge_version, forge_version_range: forge_version_range,
@@ -102,13 +99,6 @@ processResources {
     }
     exclude '**/data/c/**', '**/data/fabric/**', '**/data/neoforge/**'
     from project(":common").sourceSets.main.resources
-}
-
-jar {
-    from('libs') {
-        include '*.jar'
-        into('META-INF/jarjar')
-    }
 }
 
 publishMods {
