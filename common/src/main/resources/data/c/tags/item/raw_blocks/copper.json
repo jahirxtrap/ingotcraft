@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "ingotcraft:tin_ingot"
+    "minecraft:raw_copper_block"
   ]
 }

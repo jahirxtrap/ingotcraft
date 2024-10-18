@@ -22,9 +22,9 @@ public class ModMaterials {
     public static final DeferredRegister<ArmorMaterial> MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, MODID);
 
     public static final Holder<ArmorMaterial> STEEL = register("steel", createMap(new int[]{2, 5, 6, 2, 5}),
-            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(itemTag("forge:ingots/steel")));
+            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(itemTag("c:ingots/steel")));
     public static final Holder<ArmorMaterial> BRONZE = register("bronze", createMap(new int[]{2, 5, 6, 2, 5}),
-            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(itemTag("forge:ingots/bronze")));
+            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(itemTag("c:ingots/bronze")));
 
     private static EnumMap<Type, Integer> createMap(int[] values) {
         EnumMap<Type, Integer> enumMap = new EnumMap<>(Type.class);
