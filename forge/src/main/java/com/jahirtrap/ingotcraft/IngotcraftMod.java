@@ -12,8 +12,8 @@ public class IngotcraftMod {
 
     public static final String MODID = "ingotcraft";
 
-    public IngotcraftMod() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+    public IngotcraftMod(FMLJavaModLoadingContext context) {
+        IEventBus bus = context.getModEventBus();
 
         ModMaterials.init(bus);
         ModContent.init(bus);
