@@ -9,11 +9,9 @@ import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
 
-import static com.jahirtrap.ingotcraft.util.CommonUtils.itemTag;
-
 public enum ModTiers implements Tier {
-    STEEL(BlockTags.INCORRECT_FOR_IRON_TOOL, 501, 6.5f, 2f, 14, () -> Ingredient.of(itemTag("c:ingots/steel"))),
-    BRONZE(BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 7f, 2f, 16, () -> Ingredient.of(itemTag("c:ingots/bronze"))),
+    STEEL(BlockTags.INCORRECT_FOR_IRON_TOOL, 501, 6.5f, 2f, 14, () -> Ingredient.of(ModTags.Items.STEEL_INGOTS)),
+    BRONZE(BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 7f, 2f, 16, () -> Ingredient.of(ModTags.Items.BRONZE_INGOTS)),
     STONE_PICK_HAMMER(Tiers.STONE, 1, 1),
     IRON_PICK_HAMMER(Tiers.IRON, 1, 1),
     DIAMOND_PICK_HAMMER(Tiers.DIAMOND, 1, 1),
@@ -21,7 +19,7 @@ public enum ModTiers implements Tier {
     NETHERITE_PICK_HAMMER(Tiers.NETHERITE, 1, 1),
     STEEL_PICK_HAMMER(ModTiers.STEEL, 1, 1),
     BRONZE_PICK_HAMMER(ModTiers.BRONZE, 1, 1),
-    ENDERITE_PICK_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4096, 16f, 5f, 17, () -> Ingredient.of(itemTag("c:ingots/enderite")));
+    ENDERITE_PICK_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4096, 16f, 5f, 17, () -> Ingredient.of(ModTags.Items.ENDERITE_INGOTS));
 
     private final TagKey<Block> incorrect;
     private final int uses;

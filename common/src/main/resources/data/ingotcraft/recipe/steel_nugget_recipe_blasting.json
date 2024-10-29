@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.1,
+  "cookingtime": 100,
+  "ingredient": [
+    {
+      "item": "ingotcraft:steel_sword"
+    },
+    {
+      "item": "ingotcraft:steel_pickaxe"
+    },
+    {
+      "item": "ingotcraft:steel_axe"
+    },
+    {
+      "item": "ingotcraft:steel_shovel"
+    },
+    {
+      "item": "ingotcraft:steel_hoe"
+    },
+    {
+      "item": "ingotcraft:steel_helmet"
+    },
+    {
+      "item": "ingotcraft:steel_chestplate"
+    },
+    {
+      "item": "ingotcraft:steel_leggings"
+    },
+    {
+      "item": "ingotcraft:steel_boots"
+    }
+  ],
+  "result": {
+    "id": "ingotcraft:steel_nugget"
+  }
+}

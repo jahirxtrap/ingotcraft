@@ -1,34 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
-      "item": "ingotcraft:raw_tin"
-    },
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
       "item": "ingotcraft:raw_tin"
     }
-  ],
+  },
   "result": {
     "id": "ingotcraft:raw_tin_block",
     "count": 1
