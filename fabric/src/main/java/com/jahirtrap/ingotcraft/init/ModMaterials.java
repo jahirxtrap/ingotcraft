@@ -12,13 +12,12 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
-import static com.jahirtrap.ingotcraft.util.CommonUtils.itemTag;
 
 public enum ModMaterials implements StringRepresentable, ArmorMaterial {
     STEEL("steel", 25, createMap(new int[]{2, 5, 6, 2}),
-            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(itemTag("c:steel_ingots"))),
+            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModTags.Items.STEEL_INGOTS)),
     BRONZE("bronze", 15, createMap(new int[]{2, 5, 6, 2}),
-            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(itemTag("c:bronze_ingots")));
+            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(ModTags.Items.BRONZE_INGOTS));
 
     private static EnumMap<Type, Integer> createMap(int[] values) {
         EnumMap<Type, Integer> enumMap = new EnumMap<>(Type.class);
