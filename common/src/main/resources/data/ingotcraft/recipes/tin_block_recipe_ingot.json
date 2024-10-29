@@ -1,34 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
-      "item": "ingotcraft:tin_ingot"
-    },
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
       "item": "ingotcraft:tin_ingot"
     }
-  ],
+  },
   "result": {
     "item": "ingotcraft:tin_block",
     "count": 1
