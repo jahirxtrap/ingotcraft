@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "ingotcraft:silver_block"
-    }
+    "ingotcraft:silver_block"
   ],
   "result": {
     "id": "ingotcraft:silver_ingot",

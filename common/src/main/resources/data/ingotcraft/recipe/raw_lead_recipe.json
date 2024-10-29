@@ -1,19 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " L",
+    " G",
     "HR"
   ],
   "key": {
-    "L": {
-      "tag": "c:gems/lapis"
-    },
-    "H": {
-      "tag": "ingotcraft:pick_hammers"
-    },
-    "R": {
-      "tag": "c:raw_materials/gold"
-    }
+    "G": "#c:gems/lapis",
+    "H": "#ingotcraft:pick_hammers",
+    "R": "#c:raw_materials/gold"
   },
   "result": {
     "id": "ingotcraft:raw_lead",

@@ -2,9 +2,7 @@
   "type": "minecraft:blasting",
   "experience": 9,
   "cookingtime": 900,
-  "ingredient": {
-    "item": "ingotcraft:raw_steel_block"
-  },
+  "ingredient": "ingotcraft:raw_steel_block",
   "result": {
     "id": "ingotcraft:steel_block"
   }

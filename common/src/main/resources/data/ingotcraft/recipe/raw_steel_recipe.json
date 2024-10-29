@@ -5,15 +5,9 @@
     "HR"
   ],
   "key": {
-    "C": {
-      "tag": "minecraft:coals"
-    },
-    "H": {
-      "tag": "ingotcraft:pick_hammers"
-    },
-    "R": {
-      "tag": "c:raw_materials/iron"
-    }
+    "C": "#minecraft:coals",
+    "H": "#ingotcraft:pick_hammers",
+    "R": "#c:raw_materials/iron"
   },
   "result": {
     "id": "ingotcraft:raw_steel",

@@ -6,9 +6,7 @@
     "NNN"
   ],
   "key": {
-    "N": {
-      "item": "ingotcraft:lead_nugget"
-    }
+    "N": "ingotcraft:lead_nugget"
   },
   "result": {
     "id": "ingotcraft:lead_ingot",

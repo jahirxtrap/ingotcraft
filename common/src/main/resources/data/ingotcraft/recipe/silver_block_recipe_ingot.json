@@ -6,9 +6,7 @@
     "III"
   ],
   "key": {
-    "I": {
-      "item": "ingotcraft:silver_ingot"
-    }
+    "I": "ingotcraft:silver_ingot"
   },
   "result": {
     "id": "ingotcraft:silver_block",

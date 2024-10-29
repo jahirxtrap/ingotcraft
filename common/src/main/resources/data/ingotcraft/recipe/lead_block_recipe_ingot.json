@@ -6,9 +6,7 @@
     "III"
   ],
   "key": {
-    "I": {
-      "item": "ingotcraft:lead_ingot"
-    }
+    "I": "ingotcraft:lead_ingot"
   },
   "result": {
     "id": "ingotcraft:lead_block",

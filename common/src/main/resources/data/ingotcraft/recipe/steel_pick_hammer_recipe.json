@@ -6,15 +6,9 @@
     " R "
   ],
   "key": {
-    "I": {
-      "tag": "c:ingots/steel"
-    },
-    "R": {
-      "tag": "c:rods/wooden"
-    },
-    "S": {
-      "tag": "c:storage_blocks/steel"
-    }
+    "I": "#c:ingots/steel",
+    "R": "#c:rods/wooden",
+    "S": "#c:storage_blocks/steel"
   },
   "result": {
     "id": "ingotcraft:steel_pick_hammer",

@@ -6,15 +6,9 @@
     " R "
   ],
   "key": {
-    "I": {
-      "tag": "c:ingots/gold"
-    },
-    "R": {
-      "tag": "c:rods/wooden"
-    },
-    "S": {
-      "tag": "c:storage_blocks/gold"
-    }
+    "I": "#c:ingots/gold",
+    "R": "#c:rods/wooden",
+    "S": "#c:storage_blocks/gold"
   },
   "result": {
     "id": "ingotcraft:golden_pick_hammer",

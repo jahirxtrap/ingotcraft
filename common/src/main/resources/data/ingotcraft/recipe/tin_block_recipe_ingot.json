@@ -6,9 +6,7 @@
     "III"
   ],
   "key": {
-    "I": {
-      "item": "ingotcraft:tin_ingot"
-    }
+    "I": "ingotcraft:tin_ingot"
   },
   "result": {
     "id": "ingotcraft:tin_block",

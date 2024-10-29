@@ -6,9 +6,7 @@
     "RRR"
   ],
   "key": {
-    "R": {
-      "item": "ingotcraft:raw_tin"
-    }
+    "R": "ingotcraft:raw_tin"
   },
   "result": {
     "id": "ingotcraft:raw_tin_block",

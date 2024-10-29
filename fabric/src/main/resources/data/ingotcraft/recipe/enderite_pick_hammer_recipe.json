@@ -1,17 +1,11 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": {
-    "item": "ingotcraft:netherite_pick_hammer"
-  },
-  "addition": {
-    "item": "enderitemod:enderite_ingot"
-  },
+  "base": "ingotcraft:netherite_pick_hammer",
+  "addition": "enderitemod:enderite_ingot",
   "result": {
     "id": "ingotcraft:enderite_pick_hammer"
   },
-  "template": {
-    "item": "enderitemod:enderite_upgrade_smithing_template"
-  },
+  "template": "enderitemod:enderite_upgrade_smithing_template",
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mod_loaded",

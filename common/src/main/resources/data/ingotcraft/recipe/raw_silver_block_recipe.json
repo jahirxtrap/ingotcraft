@@ -6,9 +6,7 @@
     "RRR"
   ],
   "key": {
-    "R": {
-      "item": "ingotcraft:raw_silver"
-    }
+    "R": "ingotcraft:raw_silver"
   },
   "result": {
     "id": "ingotcraft:raw_silver_block",

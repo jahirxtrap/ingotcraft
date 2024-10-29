@@ -6,15 +6,9 @@
     " R "
   ],
   "key": {
-    "G": {
-      "tag": "c:gems/diamond"
-    },
-    "R": {
-      "tag": "c:rods/wooden"
-    },
-    "S": {
-      "tag": "c:storage_blocks/diamond"
-    }
+    "G": "#c:gems/diamond",
+    "R": "#c:rods/wooden",
+    "S": "#c:storage_blocks/diamond"
   },
   "result": {
     "id": "ingotcraft:diamond_pick_hammer",

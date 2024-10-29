@@ -6,9 +6,7 @@
     "NNN"
   ],
   "key": {
-    "N": {
-      "item": "ingotcraft:tin_nugget"
-    }
+    "N": "ingotcraft:tin_nugget"
   },
   "result": {
     "id": "ingotcraft:tin_ingot",

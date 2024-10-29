@@ -6,15 +6,9 @@
     " R "
   ],
   "key": {
-    "T": {
-      "tag": "minecraft:stone_tool_materials"
-    },
-    "R": {
-      "tag": "c:rods/wooden"
-    },
-    "S": {
-      "tag": "c:stones"
-    }
+    "T": "#minecraft:stone_tool_materials",
+    "R": "#c:rods/wooden",
+    "S": "#c:stones"
   },
   "result": {
     "id": "ingotcraft:stone_pick_hammer",

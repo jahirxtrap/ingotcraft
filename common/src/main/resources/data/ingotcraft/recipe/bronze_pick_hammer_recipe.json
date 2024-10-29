@@ -6,15 +6,9 @@
     " R "
   ],
   "key": {
-    "I": {
-      "tag": "c:ingots/bronze"
-    },
-    "R": {
-      "tag": "c:rods/wooden"
-    },
-    "S": {
-      "tag": "c:storage_blocks/bronze"
-    }
+    "I": "#c:ingots/bronze",
+    "R": "#c:rods/wooden",
+    "S": "#c:storage_blocks/bronze"
   },
   "result": {
     "id": "ingotcraft:bronze_pick_hammer",

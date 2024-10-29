@@ -3,33 +3,15 @@
   "experience": 0.1,
   "cookingtime": 200,
   "ingredient": [
-    {
-      "item": "ingotcraft:bronze_sword"
-    },
-    {
-      "item": "ingotcraft:bronze_pickaxe"
-    },
-    {
-      "item": "ingotcraft:bronze_axe"
-    },
-    {
-      "item": "ingotcraft:bronze_shovel"
-    },
-    {
-      "item": "ingotcraft:bronze_hoe"
-    },
-    {
-      "item": "ingotcraft:bronze_helmet"
-    },
-    {
-      "item": "ingotcraft:bronze_chestplate"
-    },
-    {
-      "item": "ingotcraft:bronze_leggings"
-    },
-    {
-      "item": "ingotcraft:bronze_boots"
-    }
+    "ingotcraft:bronze_sword",
+    "ingotcraft:bronze_pickaxe",
+    "ingotcraft:bronze_axe",
+    "ingotcraft:bronze_shovel",
+    "ingotcraft:bronze_hoe",
+    "ingotcraft:bronze_helmet",
+    "ingotcraft:bronze_chestplate",
+    "ingotcraft:bronze_leggings",
+    "ingotcraft:bronze_boots"
   ],
   "result": {
     "id": "ingotcraft:bronze_nugget"

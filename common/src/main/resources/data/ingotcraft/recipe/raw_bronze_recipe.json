@@ -5,15 +5,9 @@
     "HR"
   ],
   "key": {
-    "A": {
-      "tag": "c:raw_materials/tin"
-    },
-    "H": {
-      "tag": "ingotcraft:pick_hammers"
-    },
-    "R": {
-      "tag": "c:raw_materials/copper"
-    }
+    "A": "#c:raw_materials/tin",
+    "H": "#ingotcraft:pick_hammers",
+    "R": "#c:raw_materials/copper"
   },
   "result": {
     "id": "ingotcraft:raw_bronze",

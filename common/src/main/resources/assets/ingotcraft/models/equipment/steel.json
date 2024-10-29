@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "ingotcraft:steel"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "ingotcraft:steel"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ingotcraft:steel"
+      }
+    ]
+  }
+}

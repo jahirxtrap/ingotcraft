@@ -1,14 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
-    "###",
-    "###"
+    "I I",
+    "III",
+    "III"
   ],
   "key": {
-    "#": {
-      "tag": "c:ingots/steel"
-    }
+    "I": "#c:ingots/steel"
   },
   "result": {
     "id": "ingotcraft:steel_chestplate",

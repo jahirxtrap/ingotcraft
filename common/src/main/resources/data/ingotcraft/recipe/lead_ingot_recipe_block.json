@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "ingotcraft:lead_block"
-    }
+    "ingotcraft:lead_block"
   ],
   "result": {
     "id": "ingotcraft:lead_ingot",

@@ -6,9 +6,7 @@
     "NNN"
   ],
   "key": {
-    "N": {
-      "item": "ingotcraft:copper_nugget"
-    }
+    "N": "ingotcraft:copper_nugget"
   },
   "result": {
     "id": "minecraft:copper_ingot",

@@ -2,9 +2,7 @@
   "type": "minecraft:blasting",
   "experience": 9,
   "cookingtime": 900,
-  "ingredient": {
-    "item": "ingotcraft:raw_bronze_block"
-  },
+  "ingredient": "ingotcraft:raw_bronze_block",
   "result": {
     "id": "ingotcraft:bronze_block"
   }

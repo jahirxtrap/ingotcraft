@@ -1,19 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " R",
-    "HA"
+    " U",
+    "HR"
   ],
   "key": {
-    "R": {
-      "tag": "c:dusts/redstone"
-    },
-    "H": {
-      "tag": "ingotcraft:pick_hammers"
-    },
-    "A": {
-      "tag": "c:raw_materials/iron"
-    }
+    "U": "#c:dusts/redstone",
+    "H": "#ingotcraft:pick_hammers",
+    "R": "#c:raw_materials/iron"
   },
   "result": {
     "id": "ingotcraft:raw_tin",
