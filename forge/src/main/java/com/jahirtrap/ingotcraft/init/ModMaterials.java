@@ -17,15 +17,14 @@ import java.util.List;
 import java.util.function.Supplier;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
-import static com.jahirtrap.ingotcraft.util.CommonUtils.itemTag;
 
 public class ModMaterials {
     public static final DeferredRegister<ArmorMaterial> MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, MODID);
 
     public static final RegistryObject<ArmorMaterial> STEEL = register("steel", createMap(new int[]{2, 5, 6, 2, 5}),
-            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(itemTag("forge:ingots/steel")));
+            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModTags.Items.STEEL_INGOTS));
     public static final RegistryObject<ArmorMaterial> BRONZE = register("bronze", createMap(new int[]{2, 5, 6, 2, 5}),
-            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(itemTag("forge:ingots/bronze")));
+            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(ModTags.Items.BRONZE_INGOTS));
 
     private static EnumMap<Type, Integer> createMap(int[] values) {
         EnumMap<Type, Integer> enumMap = new EnumMap<>(Type.class);

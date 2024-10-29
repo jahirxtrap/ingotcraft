@@ -15,13 +15,12 @@ import java.util.List;
 import java.util.function.Supplier;
 
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
-import static com.jahirtrap.ingotcraft.util.CommonUtils.itemTag;
 
 public class ModMaterials {
     public static final Holder<ArmorMaterial> STEEL = register("steel", createMap(new int[]{2, 5, 6, 2, 5}),
-            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(itemTag("c:ingots/steel")));
+            9, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0f, () -> Ingredient.of(ModTags.Items.STEEL_INGOTS));
     public static final Holder<ArmorMaterial> BRONZE = register("bronze", createMap(new int[]{2, 5, 6, 2, 5}),
-            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(itemTag("c:ingots/bronze")));
+            16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f, () -> Ingredient.of(ModTags.Items.BRONZE_INGOTS));
 
     private static EnumMap<Type, Integer> createMap(int[] values) {
         EnumMap<Type, Integer> enumMap = new EnumMap<>(Type.class);

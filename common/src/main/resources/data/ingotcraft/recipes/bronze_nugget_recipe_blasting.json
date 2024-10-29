@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.1,
+  "cookingtime": 100,
+  "ingredient": [
+    {
+      "item": "ingotcraft:bronze_sword"
+    },
+    {
+      "item": "ingotcraft:bronze_pickaxe"
+    },
+    {
+      "item": "ingotcraft:bronze_axe"
+    },
+    {
+      "item": "ingotcraft:bronze_shovel"
+    },
+    {
+      "item": "ingotcraft:bronze_hoe"
+    },
+    {
+      "item": "ingotcraft:bronze_helmet"
+    },
+    {
+      "item": "ingotcraft:bronze_chestplate"
+    },
+    {
+      "item": "ingotcraft:bronze_leggings"
+    },
+    {
+      "item": "ingotcraft:bronze_boots"
+    }
+  ],
+  "result": {
+    "id": "ingotcraft:bronze_nugget"
+  }
+}
