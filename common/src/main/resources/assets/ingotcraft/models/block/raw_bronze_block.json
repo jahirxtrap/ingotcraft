@@ -1,7 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ingotcraft:block/raw_bronze_block",
-    "particle": "ingotcraft:block/raw_bronze_block"
+    "all": "ingotcraft:block/raw_bronze_block"
   }
 }
