@@ -1,7 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ingotcraft:block/steel_block",
-    "particle": "ingotcraft:block/steel_block"
+    "all": "ingotcraft:block/steel_block"
   }
 }
