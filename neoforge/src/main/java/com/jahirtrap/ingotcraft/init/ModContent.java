@@ -62,17 +62,17 @@ public class ModContent {
     public static final DeferredItem<Item> STEEL_PICK_HAMMER = registerItem("steel_pick_hammer", () -> new BasePickHammerItem(ModTiers.STEEL_PICK_HAMMER, new Item.Properties()));
     public static final DeferredItem<Item> BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", () -> new BasePickHammerItem(ModTiers.BRONZE_PICK_HAMMER, new Item.Properties()));
 
-    public static DeferredBlock<Block> registerBlock(String name, Supplier<Block> supplier, Item.Properties itemProp) {
+    private static DeferredBlock<Block> registerBlock(String name, Supplier<Block> supplier, Item.Properties itemProp) {
         var blockReg = registerBlock(name, supplier);
         registerItem(name, () -> new BlockItem(blockReg.get(), itemProp));
         return blockReg;
     }
 
-    public static DeferredBlock<Block> registerBlock(String name, Supplier<Block> supplier) {
+    private static DeferredBlock<Block> registerBlock(String name, Supplier<Block> supplier) {
         return BLOCKS.register(name, supplier);
     }
 
-    public static DeferredItem<Item> registerItem(String name, Supplier<Item> supplier) {
+    private static DeferredItem<Item> registerItem(String name, Supplier<Item> supplier) {
         return ITEMS.register(name, supplier);
     }
 
