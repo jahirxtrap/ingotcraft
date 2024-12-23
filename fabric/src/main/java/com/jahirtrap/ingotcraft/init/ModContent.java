@@ -60,16 +60,16 @@ public class ModContent {
     public static final Item STEEL_PICK_HAMMER = registerItem("steel_pick_hammer", new BasePickHammerItem(ModTiers.STEEL_PICK_HAMMER, new Item.Properties()));
     public static final Item BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", new BasePickHammerItem(ModTiers.BRONZE_PICK_HAMMER, new Item.Properties()));
 
-    public static Block registerBlock(String name, Block block, Item.Properties itemProp) {
+    private static Block registerBlock(String name, Block block, Item.Properties itemProp) {
         registerItem(name, new BlockItem(block, itemProp));
         return registerBlock(name, block);
     }
 
-    public static Block registerBlock(String name, Block block) {
+    private static Block registerBlock(String name, Block block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(MODID, name), block);
     }
 
-    public static Item registerItem(String name, Item item) {
+    private static Item registerItem(String name, Item item) {
         var itemReg = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(MODID, name), item);
         ITEMS.add(itemReg);
         return itemReg;
