@@ -1,22 +1,22 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "ingotcraft:netherite_pick_hammer"
+    "item": "ingotcraft:iron_pick_hammer"
   },
   "addition": {
-    "item": "enderitemod:enderite_ingot"
+    "item": "kuromaterials:zurite_ingot"
   },
   "result": {
-    "id": "ingotcraft:enderite_pick_hammer"
+    "id": "ingotcraft:zurite_pick_hammer"
   },
   "template": {
-    "item": "enderitemod:enderite_upgrade_smithing_template"
+    "item": "kuromaterials:zurite_upgrade_smithing_template"
   },
   "fabric:load_conditions": [
     {
       "condition": "fabric:any_mods_loaded",
       "values": [
-        "enderitemod"
+        "kuromaterials"
       ]
     }
   ]

@@ -11,11 +11,12 @@ Easy crafting for base metals
 - Silver (Raw, Raw Block, Ingot, Block, Nugget)
 - Tin (Raw, Raw Block, Ingot, Block, Nugget)
 - Copper (Nugget)
-- Pick Hammer (Stone, Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze)
+- Pick Hammer (Stone, Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze, Zurite)
 
 <strong>Compatible with:</strong>
 
 - <a href="https://www.curseforge.com/minecraft/mc-mods/enderite-mod-for-forge" target="_blank">Enderite mod</a>
+- <a href="https://www.curseforge.com/minecraft/mc-mods/kuro-materials" target="_blank">Kuro Materials mod</a>
 
 <img src="https://cdn.modrinth.com/data/Kma1RCF3/images/af86e6613875dabb39280d2fa62723f16bfc8384.png"><br>
 
@@ -24,6 +25,6 @@ Easy crafting for base metals
 <details>
   <summary>Spoiler</summary>
 
-<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/d0311049d245ad90781e5eb5186fa76c153c36cd.png" width="500">
+<img src="https://cdn.modrinth.com/data/Kma1RCF3/images/e209f0f65475a32b92323097600c155a882d867b.png" width="500">
 
 </details>
