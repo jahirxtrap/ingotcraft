@@ -79,7 +79,6 @@ public enum ModMaterials implements StringRepresentable, ArmorMaterial {
         return knockbackResistance;
     }
 
-    @Override
     public String getSerializedName() {
         return name;
     }

@@ -11,11 +11,12 @@ public enum ModTiers implements Tier {
     BRONZE(2, 350, 7f, 2f, 16, () -> Ingredient.of(ModTags.Items.BRONZE_INGOTS)),
     STONE_PICK_HAMMER(Tiers.STONE, 1, 1),
     IRON_PICK_HAMMER(Tiers.IRON, 1, 1),
-    DIAMOND_PICK_HAMMER(Tiers.DIAMOND, 1, 1),
     GOLD_PICK_HAMMER(Tiers.GOLD, 5, 1),
+    DIAMOND_PICK_HAMMER(Tiers.DIAMOND, 1, 1),
     NETHERITE_PICK_HAMMER(Tiers.NETHERITE, 1, 1),
     STEEL_PICK_HAMMER(ModTiers.STEEL, 1, 1),
     BRONZE_PICK_HAMMER(ModTiers.BRONZE, 1, 1),
+    ZURITE_PICK_HAMMER(4, 1320, 9.5f, 4f, 16, () -> Ingredient.of(ModTags.Items.ZURITE_INGOTS)),
     ENDERITE_PICK_HAMMER(4, 4096, 16f, 5f, 17, () -> Ingredient.of(ModTags.Items.ENDERITE_INGOTS));
 
     private final int level;
