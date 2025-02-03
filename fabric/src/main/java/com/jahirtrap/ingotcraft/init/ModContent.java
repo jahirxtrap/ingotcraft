@@ -57,6 +57,7 @@ public class ModContent {
     public static final Item ENDERITE_PICK_HAMMER = registerItem("enderite_pick_hammer", new BasePickHammerItem(ModTiers.ENDERITE_PICK_HAMMER, new Item.Properties().fireResistant()));
     public static final Item STEEL_PICK_HAMMER = registerItem("steel_pick_hammer", new BasePickHammerItem(ModTiers.STEEL_PICK_HAMMER, new Item.Properties()));
     public static final Item BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", new BasePickHammerItem(ModTiers.BRONZE_PICK_HAMMER, new Item.Properties()));
+    public static final Item ZURITE_PICK_HAMMER = registerItem("zurite_pick_hammer", new BasePickHammerItem(ModTiers.ZURITE_PICK_HAMMER, new Item.Properties().fireResistant()));
 
     private static Block registerBlock(String name, Block block, Item.Properties itemProp) {
         registerItem(name, new BlockItem(block, itemProp.tab(TAB_INGOTCRAFT)));
