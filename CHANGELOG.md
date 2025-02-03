@@ -1,1 +1,1 @@
-- Internal changes
+- Kuro Materials mod compat
