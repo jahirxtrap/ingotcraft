@@ -63,6 +63,7 @@ public class ModContent {
     public static final DeferredItem<Item> ENDERITE_PICK_HAMMER = registerItem("enderite_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.ENDERITE_PICK_HAMMER, p), new Item.Properties().fireResistant());
     public static final DeferredItem<Item> STEEL_PICK_HAMMER = registerItem("steel_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.STEEL_PICK_HAMMER, p), new Item.Properties());
     public static final DeferredItem<Item> BRONZE_PICK_HAMMER = registerItem("bronze_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.BRONZE_PICK_HAMMER, p), new Item.Properties());
+    public static final DeferredItem<Item> ZURITE_PICK_HAMMER = registerItem("zurite_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.ZURITE_PICK_HAMMER, p), new Item.Properties().fireResistant());
 
     private static DeferredBlock<Block> registerBlock(String name, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties blockProp, Item.Properties itemProp) {
         var blockReg = registerBlock(name, function, blockProp);

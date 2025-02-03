@@ -1,1 +1,1 @@
-- Update NeoForge version
+- Kuro Materials mod compat

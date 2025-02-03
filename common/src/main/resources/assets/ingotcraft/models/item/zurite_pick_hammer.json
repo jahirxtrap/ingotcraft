@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ingotcraft:item/zurite_pick_hammer"
+  }
+}

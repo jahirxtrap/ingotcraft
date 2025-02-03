@@ -8,16 +8,11 @@ import static com.jahirtrap.ingotcraft.util.CommonUtils.hurt;
 
 public class BasePickHammerItem extends PickaxeItem {
     public BasePickHammerItem(ToolMaterial material, Properties properties) {
-        super(material, 7f, -3f, properties);
+        super(material, 7f, -3f, properties.setNoCombineRepair());
     }
 
     @Override
     public ItemStack getCraftingRemainder(ItemStack stack) {
         return hurt(1, stack.copy());
-    }
-
-    @Override
-    public boolean isCombineRepairable(ItemStack stack) {
-        return false;
     }
 }
