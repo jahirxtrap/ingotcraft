@@ -10,7 +10,7 @@
     "item": "ingotcraft:enderite_pick_hammer"
   },
   "template": {
-    "item": "enderitemod:enderite_upgrade_smithing_template"
+    "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "conditions": [
     {
