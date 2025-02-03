@@ -30,11 +30,12 @@ public class ModMaterials {
         ToolMaterial BRONZE = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 7f, 2f, 16, ModTags.Items.BRONZE_INGOTS);
         ToolMaterial STONE_PICK_HAMMER = copy(ToolMaterial.STONE, 1, 1);
         ToolMaterial IRON_PICK_HAMMER = copy(ToolMaterial.IRON, 1, 1);
-        ToolMaterial DIAMOND_PICK_HAMMER = copy(ToolMaterial.DIAMOND, 1, 1);
         ToolMaterial GOLD_PICK_HAMMER = copy(ToolMaterial.GOLD, 5, 1);
+        ToolMaterial DIAMOND_PICK_HAMMER = copy(ToolMaterial.DIAMOND, 1, 1);
         ToolMaterial NETHERITE_PICK_HAMMER = copy(ToolMaterial.NETHERITE, 1, 1);
         ToolMaterial STEEL_PICK_HAMMER = copy(ModMaterials.Tool.STEEL, 1, 1);
         ToolMaterial BRONZE_PICK_HAMMER = copy(ModMaterials.Tool.BRONZE, 1, 1);
+        ToolMaterial ZURITE_PICK_HAMMER = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1320, 9.5f, 4f, 16, ModTags.Items.ZURITE_INGOTS);
         ToolMaterial ENDERITE_PICK_HAMMER = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4096, 16f, 5f, 17, ModTags.Items.ENDERITE_INGOTS);
 
         private static ToolMaterial copy(ToolMaterial material, int i, float j) {

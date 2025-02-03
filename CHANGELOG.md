@@ -1,1 +1,1 @@
-- Update to 1.21.3
+- Kuro Materials mod compat

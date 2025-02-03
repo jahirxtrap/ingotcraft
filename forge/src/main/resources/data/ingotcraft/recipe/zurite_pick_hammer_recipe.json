@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "ingotcraft:iron_pick_hammer",
+  "addition": "kuromaterials:zurite_ingot",
+  "result": {
+    "id": "ingotcraft:zurite_pick_hammer"
+  },
+  "template": "kuromaterials:zurite_upgrade_smithing_template",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "kuromaterials"
+    }
+  ]
+}
