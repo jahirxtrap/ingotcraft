@@ -1,1 +1,1 @@
-- Kuro Materials mod compat
+- Added Russian translations ([Pull request #4](https://github.com/jahirxtrap/ingotcraft/pull/4))
