@@ -1,1 +1,1 @@
-- Update to 1.21.5
+- Added Russian translations ([Pull request #4](https://github.com/jahirxtrap/ingotcraft/pull/4))
