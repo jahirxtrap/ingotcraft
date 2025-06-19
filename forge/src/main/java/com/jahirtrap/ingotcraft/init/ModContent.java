@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -98,7 +98,7 @@ public class ModContent {
         );
     }
 
-    public static void init(IEventBus bus) {
+    public static void init(BusGroup bus) {
         BLOCKS.register(bus);
         ITEMS.register(bus);
     }
