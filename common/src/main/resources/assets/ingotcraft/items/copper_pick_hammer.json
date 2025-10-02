@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "ingotcraft:item/copper_nugget"
+    "model": "ingotcraft:item/copper_pick_hammer"
   }
 }

@@ -36,6 +36,7 @@ public class ModMaterials {
         ToolMaterial STEEL = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 501, 6.5f, 2f, 14, ModTags.Items.STEEL_INGOTS);
         ToolMaterial BRONZE = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 7f, 2f, 16, ModTags.Items.BRONZE_INGOTS);
         ToolMaterial STONE_PICK_HAMMER = copy(ToolMaterial.STONE, 1, 1);
+        ToolMaterial COPPER_PICK_HAMMER = copy(ToolMaterial.COPPER, 1, 1);
         ToolMaterial IRON_PICK_HAMMER = copy(ToolMaterial.IRON, 1, 1);
         ToolMaterial GOLD_PICK_HAMMER = copy(ToolMaterial.GOLD, 5, 1);
         ToolMaterial DIAMOND_PICK_HAMMER = copy(ToolMaterial.DIAMOND, 1, 1);

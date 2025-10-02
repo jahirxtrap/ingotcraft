@@ -10,8 +10,7 @@ Easy crafting for base metals
 - Lead (Raw, Raw Block, Ingot, Block, Nugget)
 - Silver (Raw, Raw Block, Ingot, Block, Nugget)
 - Tin (Raw, Raw Block, Ingot, Block, Nugget)
-- Copper (Nugget)
-- Pick Hammer (Stone, Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze, Zurite)
+- Pick Hammer (Stone, Copper, Iron, Golden, Diamond, Netherite, Enderite, Steel, Bronze, Zurite)
 
 <strong>Compatible with:</strong>
 
