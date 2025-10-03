@@ -49,12 +49,12 @@ public class ModContent {
     public static final RegistryObject<Item> LEAD_NUGGET = registerItem("lead_nugget", Item::new, new Item.Properties());
     public static final RegistryObject<Item> SILVER_NUGGET = registerItem("silver_nugget", Item::new, new Item.Properties());
     public static final RegistryObject<Item> TIN_NUGGET = registerItem("tin_nugget", Item::new, new Item.Properties());
-    public static final RegistryObject<Item> COPPER_NUGGET = registerItem("copper_nugget", Item::new, new Item.Properties());
     public static final List<RegistryObject<Item>> STEEL_TOOLS = registerTools("steel", ModMaterials.Tool.STEEL, new float[]{6f, -3f, -2f, -1f}, new Item.Properties());
     public static final List<RegistryObject<Item>> BRONZE_TOOLS = registerTools("bronze", ModMaterials.Tool.BRONZE, new float[]{6f, -3f, -2f, -1f}, new Item.Properties());
     public static final List<RegistryObject<Item>> STEEL_ARMOR = registerArmor(ModMaterials.Armor.STEEL, new Item.Properties());
     public static final List<RegistryObject<Item>> BRONZE_ARMOR = registerArmor(ModMaterials.Armor.BRONZE, new Item.Properties());
     public static final RegistryObject<Item> STONE_PICK_HAMMER = registerItem("stone_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.STONE_PICK_HAMMER, p), new Item.Properties());
+    public static final RegistryObject<Item> COPPER_PICK_HAMMER = registerItem("copper_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.COPPER_PICK_HAMMER, p), new Item.Properties());
     public static final RegistryObject<Item> IRON_PICK_HAMMER = registerItem("iron_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.IRON_PICK_HAMMER, p), new Item.Properties());
     public static final RegistryObject<Item> GOLDEN_PICK_HAMMER = registerItem("golden_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.GOLD_PICK_HAMMER, p), new Item.Properties());
     public static final RegistryObject<Item> DIAMOND_PICK_HAMMER = registerItem("diamond_pick_hammer", (p) -> new BasePickHammerItem(ModMaterials.Tool.DIAMOND_PICK_HAMMER, p), new Item.Properties());
