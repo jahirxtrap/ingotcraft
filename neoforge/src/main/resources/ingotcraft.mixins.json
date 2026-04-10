@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.jahirtrap.ingotcraft.init.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CraftingRecipeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

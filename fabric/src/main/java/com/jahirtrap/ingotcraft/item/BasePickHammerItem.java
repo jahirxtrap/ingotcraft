@@ -4,18 +4,19 @@ import com.jahirtrap.ingotcraft.util.RepairableItem;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.ToolMaterial;
 
 import static com.jahirtrap.ingotcraft.util.CommonUtils.hurt;
 
 public class BasePickHammerItem extends Item implements RepairableItem, FabricItem {
-    public BasePickHammerItem(ToolMaterial material, Properties properties) {
+    public BasePickHammerItem(ToolMaterial material, Item.Properties properties) {
         super(properties.pickaxe(material, 7f, -3f));
     }
 
     @Override
-    public ItemStack getRecipeRemainder(ItemStack stack) {
-        return hurt(1, stack.copy());
+    public ItemStackTemplate getCraftingRemainder(ItemStack stack) {
+        return ItemStackTemplate.fromNonEmptyStack(hurt(1, stack.copy()));
     }
 
     @Override

@@ -1,6 +1,5 @@
 package com.jahirtrap.ingotcraft.init;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -12,7 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import static com.jahirtrap.ingotcraft.IngotcraftMod.MODID;
 
 public class ModTab {
-    public static final CreativeModeTab TAB_INGOTCRAFT = FabricItemGroup.builder()
+    public static final CreativeModeTab TAB_INGOTCRAFT = CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
             .icon(() -> new ItemStack(ModContent.NETHERITE_PICK_HAMMER))
             .displayItems((features, event) -> {
                 for (Item item : ModContent.ITEMS)
