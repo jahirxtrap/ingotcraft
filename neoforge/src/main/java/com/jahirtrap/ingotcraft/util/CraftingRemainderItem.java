@@ -2,7 +2,7 @@ package com.jahirtrap.ingotcraft.util;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemStackTemplate;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 public interface CraftingRemainderItem {
     @Nullable ItemStackTemplate getCraftingRemainder(ItemStack stack);
