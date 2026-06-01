@@ -14,6 +14,8 @@ mixin {
     config("${mod_id}.mixins.json")
 }
 
+jar.manifest.attributes('MixinConfigs': "${mod_id}.mixins.json")
+
 minecraft {
     mappings channel: 'official', version: minecraft_version
 
