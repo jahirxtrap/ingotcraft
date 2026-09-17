@@ -6,6 +6,9 @@
   "mixins": [
     "RepairItemRecipeMixin"
   ],
+  "client": [
+    "ItemModelResolverMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.trim.TrimMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -35,11 +36,11 @@ public class ModContent {
     public static DeferredBlock<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).strength(5f, 6f).requiresCorrectToolForDrops(), new Item.Properties());
     public static DeferredBlock<Block> RAW_SILVER_BLOCK = registerBlock("raw_silver_block", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).strength(5f, 6f).requiresCorrectToolForDrops(), new Item.Properties());
     public static DeferredBlock<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(5f, 6f).requiresCorrectToolForDrops(), new Item.Properties());
-    public static final DeferredItem<Item> STEEL_INGOT = registerItem("steel_ingot", Item::new, new Item.Properties());
-    public static final DeferredItem<Item> BRONZE_INGOT = registerItem("bronze_ingot", Item::new, new Item.Properties());
-    public static final DeferredItem<Item> LEAD_INGOT = registerItem("lead_ingot", Item::new, new Item.Properties());
-    public static final DeferredItem<Item> SILVER_INGOT = registerItem("silver_ingot", Item::new, new Item.Properties());
-    public static final DeferredItem<Item> TIN_INGOT = registerItem("tin_ingot", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> STEEL_INGOT = registerItem("steel_ingot", Item::new, new Item.Properties().trimMaterial(trimKey("steel")));
+    public static final DeferredItem<Item> BRONZE_INGOT = registerItem("bronze_ingot", Item::new, new Item.Properties().trimMaterial(trimKey("bronze")));
+    public static final DeferredItem<Item> LEAD_INGOT = registerItem("lead_ingot", Item::new, new Item.Properties().trimMaterial(trimKey("lead")));
+    public static final DeferredItem<Item> SILVER_INGOT = registerItem("silver_ingot", Item::new, new Item.Properties().trimMaterial(trimKey("silver")));
+    public static final DeferredItem<Item> TIN_INGOT = registerItem("tin_ingot", Item::new, new Item.Properties().trimMaterial(trimKey("tin")));
     public static DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops(), new Item.Properties());
     public static DeferredBlock<Block> BRONZE_BLOCK = registerBlock("bronze_block", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops(), new Item.Properties());
     public static DeferredBlock<Block> LEAD_BLOCK = registerBlock("lead_block", Block::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).sound(SoundType.COPPER).strength(5f, 6f).requiresCorrectToolForDrops(), new Item.Properties());
@@ -75,6 +76,10 @@ public class ModContent {
         return BLOCKS.register(name, () -> function.apply(blockProp.setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MODID, name)))));
     }
 
+    private static ResourceKey<TrimMaterial> trimKey(String name) {
+        return ResourceKey.create(Registries.TRIM_MATERIAL, Identifier.fromNamespaceAndPath(MODID, name));
+    }
+
     private static DeferredItem<Item> registerItem(String name, Function<Item.Properties, Item> function, Item.Properties itemProp) {
         return ITEMS.register(name, () -> function.apply(itemProp.setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MODID, name)))));
     }
@@ -83,9 +88,9 @@ public class ModContent {
         return List.of(
                 registerItem(name + "_sword", (p) -> new Item(p.sword(material, 3f, -2.4f)), itemProp),
                 registerItem(name + "_pickaxe", (p) -> new Item(p.pickaxe(material, 1f, -2.8f)), itemProp),
-                registerItem(name + "_axe", (p) -> new AxeItem(material, attr[0], attr[1], p), itemProp),
-                registerItem(name + "_shovel", (p) -> new ShovelItem(material, 1.5f, -3f, p), itemProp),
-                registerItem(name + "_hoe", (p) -> new HoeItem(material, attr[2], attr[3], p), itemProp)
+                registerItem(name + "_axe", (p) -> new Item(p.axe(material, attr[0], attr[1])), itemProp),
+                registerItem(name + "_shovel", (p) -> new Item(p.shovel(material, 1.5f, -3f)), itemProp),
+                registerItem(name + "_hoe", (p) -> new Item(p.hoe(material, attr[2], attr[3])), itemProp)
         );
     }
 

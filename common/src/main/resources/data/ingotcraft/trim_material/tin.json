@@ -1,9 +1,7 @@
 {
-  "asset_name": "tin",
   "description": {
     "color": "#F3CFD4",
     "translate": "trim_material.ingotcraft.tin"
   },
-  "ingredient": "ingotcraft:tin_ingot",
-  "item_model_index": 0.5
+  "palette_id": "ingotcraft:trim/tin"
 }

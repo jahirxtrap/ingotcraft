@@ -6,6 +6,9 @@
   "mixins": [
     "CraftingRecipeMixin"
   ],
+  "client": [
+    "ItemModelResolverMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

@@ -1,9 +1,7 @@
 {
-  "asset_name": "bronze",
   "description": {
     "color": "#C67E0E",
     "translate": "trim_material.ingotcraft.bronze"
   },
-  "ingredient": "ingotcraft:bronze_ingot",
-  "item_model_index": 0.6
+  "palette_id": "ingotcraft:trim/bronze"
 }
